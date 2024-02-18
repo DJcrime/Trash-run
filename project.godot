@@ -11,9 +11,17 @@ config_version=5
 [application]
 
 config/name="Trash run"
+run/main_scene="res://scenes/mainGame.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://icon.svg"
 
+[display]
+
+window/stretch/mode="viewport"
+window/stretch/aspect="expand"
+window/handheld/orientation=4
+
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="mobile"

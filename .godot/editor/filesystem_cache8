@@ -1,5 +1,14 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1708076579
+::res://::1708266005
 icon.svg::CompressedTexture2D::1168730199758383366::1708031057::1708031062::1::::<><>::
-::res://grafiche/::1708031784
-trash.png::CompressedTexture2D::6382910656624441356::1708031784::1708076579::1::::<><>::
+::res://characters/::1708186351
+base_character.tscn::PackedScene::1312740828415307561::1708186351::0::1::::<><>::uid://cw66uuqv0j6ay::::res://grafiche/trash.png
+glass.tscn::PackedScene::5061338461740518581::1708186351::0::1::::<><>::res://scripts/glass.gd<>uid://dirf6ak2sn3qw::::res://grafiche/vetri.png
+::res://grafiche/::1708186392
+trash.png::CompressedTexture2D::6382910656624441356::1708184745::1708184745::1::::<><>::
+vetri.png::CompressedTexture2D::7756226183276861070::1708186392::1708266005::1::::<><>::
+::res://scenes/::1708186379
+mainGame.tscn::PackedScene::6382997410578227511::1708186379::0::1::::<><>::res://scripts/mainGame.gd<>uid://sx5wc835xoa0::::res://characters/base_character.tscn
+::res://scripts/::1708186313
+glass.gd::GDScript::-1::1708186313::0::1::::<>Node2D<>::
+mainGame.gd::GDScript::-1::1708186271::0::1::::<>Node<>::

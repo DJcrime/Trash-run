@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://sx5wc835xoa0"]
+
+[ext_resource type="Texture2D" uid="uid://cw66uuqv0j6ay" path="res://grafiche/trash.png" id="1_yx0sf"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dir4n"]
+radius = 11.0
+height = 40.0
+
+[node name="base character" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_yx0sf")
+offset = Vector2(1.5, -2.195)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -5)
+shape = SubResource("CapsuleShape2D_dir4n")

@@ -1,1 +1,3 @@
 res://scenes/mainGame.tscn
+res://characters/base_character.tscn
+res://characters/glass.tscn
