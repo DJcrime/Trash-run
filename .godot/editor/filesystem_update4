@@ -5,3 +5,8 @@ res://scenes/mainGame.tscn
 res://scripts/mainGame.gd
 res://globals/globals.gd
 res://scripts/base_character.gd
+res://characters/area_2d.tscn
+res://characters/carton.tscn
+res://characters/plastic.tscn
+res://characters/umido.tscn
+res://characters/indifferenziata.tscn

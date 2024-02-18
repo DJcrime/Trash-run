@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://crnvhvrr7wx7o"]
+
+[ext_resource type="Texture2D" uid="uid://cbg7v0vb8dau6" path="res://grafiche/cartone.png" id="1_c81lu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p7c1l"]
+size = Vector2(51, 41)
+
+[node name="carton" type="Area2D" groups=["carton"]]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2.5, -3.5)
+shape = SubResource("RectangleShape2D_p7c1l")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_c81lu")

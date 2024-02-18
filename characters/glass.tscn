@@ -6,13 +6,13 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tblia"]
 size = Vector2(40, 43)
 
-[node name="glass" type="Area2D" groups=["plastic"]]
+[node name="glass" type="Area2D" groups=["glass"]]
 collision_layer = 2
 script = ExtResource("1_m4b2h")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_xdsqd")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1, -0.5)
 shape = SubResource("RectangleShape2D_tblia")
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_xdsqd")
