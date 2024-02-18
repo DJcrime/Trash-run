@@ -1,3 +1,7 @@
-res://scenes/mainGame.tscn
-res://characters/base_character.tscn
 res://characters/glass.tscn
+res://scripts/glass.gd
+res://characters/base_character.tscn
+res://scenes/mainGame.tscn
+res://scripts/mainGame.gd
+res://globals/globals.gd
+res://scripts/base_character.gd

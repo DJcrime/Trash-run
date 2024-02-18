@@ -75,7 +75,14 @@ color = Color(0.0784314, 0.898039, 1, 1)
 [node name="trashSpawn" type="Timer" parent="timer"]
 autostart = true
 
-[node name="trash" type="Node" parent="."]
+[node name="trash" type="Node2D" parent="."]
+
+[node name="deleteBarrier" type="Node2D" parent="."]
+position = Vector2(0, 648)
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="deleteBarrier"]
+position = Vector2(578, 0)
+scale = Vector2(58.8, 1)
 
 [connection signal="button_down" from="CanvasLayer/Control/left" to="." method="_on_left_button_down"]
 [connection signal="button_up" from="CanvasLayer/Control/left" to="." method="_on_left_button_up"]

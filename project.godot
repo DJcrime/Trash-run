@@ -15,11 +15,26 @@ run/main_scene="res://scenes/mainGame.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://icon.svg"
 
+[autoload]
+
+DebugMenu="*res://addons/debug_menu/debug_menu.tscn"
+Globals="*res://globals/globals.gd"
+
 [display]
 
 window/stretch/mode="viewport"
 window/stretch/aspect="expand"
 window/handheld/orientation=4
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/debug_menu/plugin.cfg")
+
+[layer_names]
+
+2d_physics/layer_1="player"
+2d_physics/layer_2="trash"
+2d_physics/layer_3="powerups"
 
 [rendering]
 

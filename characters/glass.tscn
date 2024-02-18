@@ -1,10 +1,18 @@
-[gd_scene load_steps=3 format=3 uid="uid://ced0rf1j0l7uf"]
+[gd_scene load_steps=4 format=3 uid="uid://ced0rf1j0l7uf"]
 
 [ext_resource type="Script" path="res://scripts/glass.gd" id="1_m4b2h"]
 [ext_resource type="Texture2D" uid="uid://dirf6ak2sn3qw" path="res://grafiche/vetri.png" id="1_xdsqd"]
 
-[node name="glass" type="Node2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tblia"]
+size = Vector2(40, 43)
+
+[node name="glass" type="Area2D" groups=["plastic"]]
+collision_layer = 2
 script = ExtResource("1_m4b2h")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, -0.5)
+shape = SubResource("RectangleShape2D_tblia")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_xdsqd")

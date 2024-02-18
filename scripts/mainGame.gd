@@ -11,6 +11,10 @@ func _process(delta):
 		$"CanvasLayer/Control/Container/base character".position.x-=200*delta
 	if right:
 		$"CanvasLayer/Control/Container/base character".position.x+=200*delta
+	$trash.position.y+=100*delta
+	if $deleteBarrier/VisibleOnScreenNotifier2D.is_on_screen():
+		$deleteBarrier.position.y+=3
+		Globals.deleteLimit=$deleteBarrier.position.y
 
 func _on_left_button_down():
 	right=false
@@ -33,5 +37,5 @@ func _on_left_button_up():
 func _on_trash_spawn_timeout():
 	for i in range(2):
 		var trash=GLASS.instantiate()
-		trash.position=Vector2(randi_range(20,1100),-50)
+		trash.position=Vector2(randi_range(20,1100),-$trash.position.y-randi_range(20,50))
 		$trash.add_child(trash)

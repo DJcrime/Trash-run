@@ -1,4 +1,5 @@
-extends Node2D
+extends Area2D
 
-func _process(delta):
-	position.y+=100*delta
+func _process(_delta):
+	if global_position.y>Globals.deleteLimit:
+		queue_free()
