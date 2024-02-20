@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://co3hphl0tfn11"]
+
+[ext_resource type="PackedScene" uid="uid://sx5wc835xoa0" path="res://characters/player/base_character.tscn" id="1_pink1"]
+[ext_resource type="Script" path="res://scripts/plastic_trash.gd" id="2_0o4js"]
+[ext_resource type="Texture2D" uid="uid://ctr5ights0pjp" path="res://grafiche/character/plastic trash.png" id="3_phsrd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fuxg3"]
+size = Vector2(35, 31)
+
+[node name="plastic trash" instance=ExtResource("1_pink1")]
+script = ExtResource("2_0o4js")
+
+[node name="CollisionShape2D" parent="." index="0"]
+position = Vector2(1.5, -16)
+shape = SubResource("RectangleShape2D_fuxg3")
+
+[node name="Sprite2D" parent="." index="1"]
+position = Vector2(0, -18.805)
+texture = ExtResource("3_phsrd")

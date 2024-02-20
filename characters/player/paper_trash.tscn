@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://c5fvg8pavopii"]
+
+[ext_resource type="PackedScene" uid="uid://sx5wc835xoa0" path="res://characters/player/base_character.tscn" id="1_nfmvo"]
+[ext_resource type="Script" path="res://scripts/paper_trash.gd" id="2_aa4aa"]
+[ext_resource type="Texture2D" uid="uid://b4jq81uewuwo5" path="res://grafiche/character/paper trash.png" id="3_f2vau"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_teyla"]
+radius = 8.0
+height = 38.0
+
+[node name="paper trash" instance=ExtResource("1_nfmvo")]
+script = ExtResource("2_aa4aa")
+
+[node name="CollisionShape2D" parent="." index="0"]
+position = Vector2(0, -18)
+shape = SubResource("CapsuleShape2D_teyla")
+
+[node name="Sprite2D" parent="." index="1"]
+position = Vector2(3, -23)
+texture = ExtResource("3_f2vau")

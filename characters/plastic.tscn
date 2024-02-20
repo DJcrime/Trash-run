@@ -1,13 +1,14 @@
 [gd_scene load_steps=3 format=3 uid="uid://vpkq3g5h5na7"]
 
-[ext_resource type="Texture2D" uid="uid://dyr2w6457ec0u" path="res://grafiche/plastica.png" id="1_f2ach"]
+[ext_resource type="Texture2D" uid="uid://dyr2w6457ec0u" path="res://grafiche/trashes/plastica.png" id="1_f2ach"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e7g6r"]
 size = Vector2(35, 26)
 
-[node name="plastic" type="Area2D"]
+[node name="plastic" type="Area2D" groups=["plastic"]]
+collision_layer = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["plastic"]]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(7.5, -1)
 shape = SubResource("RectangleShape2D_e7g6r")
 

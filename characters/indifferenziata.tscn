@@ -1,11 +1,12 @@
 [gd_scene load_steps=3 format=3 uid="uid://x5n3c1t0jbua"]
 
-[ext_resource type="Texture2D" uid="uid://duf10l3585cf4" path="res://grafiche/indifferenziata.png" id="1_4fnfp"]
+[ext_resource type="Texture2D" uid="uid://duf10l3585cf4" path="res://grafiche/trashes/indifferenziata.png" id="1_4fnfp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h271e"]
 size = Vector2(56, 61)
 
 [node name="indifferenziata" type="Area2D" groups=["indifferenziata"]]
+collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1, -2.5)

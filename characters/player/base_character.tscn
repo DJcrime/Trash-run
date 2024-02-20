@@ -1,22 +1,23 @@
 [gd_scene load_steps=4 format=3 uid="uid://sx5wc835xoa0"]
 
-[ext_resource type="Script" path="res://scripts/base_character.gd" id="1_056af"]
-[ext_resource type="Texture2D" uid="uid://cw66uuqv0j6ay" path="res://grafiche/trash.png" id="1_yx0sf"]
+[ext_resource type="Script" path="res://scripts/base_character.gd" id="1_djjwm"]
+[ext_resource type="Texture2D" uid="uid://cw66uuqv0j6ay" path="res://grafiche/character/trash.png" id="2_kawh1"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dir4n"]
 radius = 11.0
-height = 40.0
+height = 38.0
 
 [node name="base character" type="Area2D"]
 collision_mask = 6
-script = ExtResource("1_056af")
+script = ExtResource("1_djjwm")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -5)
+position = Vector2(0, -20.805)
 shape = SubResource("CapsuleShape2D_dir4n")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_yx0sf")
+position = Vector2(0, -15.805)
+texture = ExtResource("2_kawh1")
 offset = Vector2(1.5, -2.195)
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]

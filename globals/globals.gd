@@ -1,7 +1,7 @@
 extends Node
 
-#variabile del tipo di cestino preso
-var chosenTrash:String="glass"
+#varibile personaggio selezionato
+var chosenCharacter:PackedScene=preload("res://characters/player/organico_trash.tscn")
 #variabile che indice l'altezza a cui la spazzatura viene eliminata
 var deleteLimit:float
 

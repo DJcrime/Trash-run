@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://ced0rf1j0l7uf"]
 
 [ext_resource type="Script" path="res://scripts/glass.gd" id="1_m4b2h"]
-[ext_resource type="Texture2D" uid="uid://dirf6ak2sn3qw" path="res://grafiche/vetri.png" id="1_xdsqd"]
+[ext_resource type="Texture2D" uid="uid://dirf6ak2sn3qw" path="res://grafiche/trashes/vetri.png" id="2_1cxml"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tblia"]
 size = Vector2(40, 43)
@@ -11,7 +11,7 @@ collision_layer = 2
 script = ExtResource("1_m4b2h")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_xdsqd")
+texture = ExtResource("2_1cxml")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1, -0.5)

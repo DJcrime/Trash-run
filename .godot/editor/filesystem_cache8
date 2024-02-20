@@ -1,32 +1,53 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1708338391
-icon.svg::CompressedTexture2D::1168730199758383366::1708338157::1708338393::1::::<><>::
-::res://addons/::1708338157
-::res://addons/debug_menu/::1708338157
-debug_menu.gd::GDScript::-1::1708338157::0::1::::<>CanvasLayer<>::
-debug_menu.tscn::PackedScene::153156931780978323::1708338157::0::1::::<><>::res://addons/debug_menu/debug_menu.gd
-LICENSE.md::TextFile::-1::1708338157::0::1::::<><>::
-plugin.cfg::TextFile::-1::1708338157::0::1::::<><>::
-plugin.gd::GDScript::-1::1708338157::0::1::::<>EditorPlugin<>::
-::res://characters/::1708338157
-base_character.tscn::PackedScene::1312740828415307561::1708338157::0::1::::<><>::res://scripts/base_character.gd<>uid://cw66uuqv0j6ay::::res://grafiche/trash.png
-carton.tscn::PackedScene::5994177307509045178::1708338157::0::1::::<><>::uid://cbg7v0vb8dau6::::res://grafiche/cartone.png
-glass.tscn::PackedScene::5061338461740518581::1708338157::0::1::::<><>::res://scripts/glass.gd<>uid://dirf6ak2sn3qw::::res://grafiche/vetri.png
-indifferenziata.tscn::PackedScene::1677114205540491364::1708338157::0::1::::<><>::uid://duf10l3585cf4::::res://grafiche/indifferenziata.png
-plastic.tscn::PackedScene::1505568606635961460::1708338157::0::1::::<><>::uid://dyr2w6457ec0u::::res://grafiche/plastica.png
-umido.tscn::PackedScene::5264803732809789521::1708338157::0::1::::<><>::uid://df3mmdbtn3q4u::::res://grafiche/umido.png
-::res://globals/::1708338157
-globals.gd::GDScript::-1::1708338157::0::1::::<>Node<>::
-::res://grafiche/::1708338157
-cartone.png::CompressedTexture2D::4857398268603422287::1708338157::1708338157::1::::<><>::
-indifferenziata.png::CompressedTexture2D::8574984721689518863::1708338157::1708338157::1::::<><>::
-plastica.png::CompressedTexture2D::8880569040910867214::1708338157::1708338157::1::::<><>::
-trash.png::CompressedTexture2D::6382910656624441356::1708338157::1708338157::1::::<><>::
-umido.png::CompressedTexture2D::7568759039819815422::1708338157::1708338157::1::::<><>::
-vetri.png::CompressedTexture2D::7756226183276861070::1708338157::1708338157::1::::<><>::
-::res://scenes/::1708338157
-mainGame.tscn::PackedScene::6382997410578227511::1708338157::0::1::::<><>::res://scripts/mainGame.gd<>uid://sx5wc835xoa0::::res://characters/base_character.tscn
-::res://scripts/::1708338157
-base_character.gd::GDScript::-1::1708338157::0::1::::<>Area2D<>::
-glass.gd::GDScript::-1::1708338157::0::1::::<>Area2D<>::
-mainGame.gd::GDScript::-1::1708338157::0::1::::<>Node<>::
+::res://::1708451504
+icon.svg::CompressedTexture2D::1168730199758383366::1708031057::1708031062::1::::<><>::
+::res://addons/::1708272191
+::res://addons/debug_menu/::1708272191
+debug_menu.gd::GDScript::-1::1708272191::0::1::::<>CanvasLayer<>::
+debug_menu.tscn::PackedScene::153156931780978323::1708272191::0::1::::<><>::res://addons/debug_menu/debug_menu.gd
+LICENSE.md::TextFile::-1::1708272191::0::1::::<><>::
+plugin.cfg::TextFile::-1::1708272191::0::1::::<><>::
+plugin.gd::GDScript::-1::1708272191::0::1::::<>EditorPlugin<>::
+::res://characters/::1708452273
+carton.tscn::PackedScene::5994177307509045178::1708452273::0::1::::<><>::uid://cbg7v0vb8dau6::::res://grafiche/trashes/cartone.png
+glass.tscn::PackedScene::5061338461740518581::1708452273::0::1::::<><>::res://scripts/glass.gd<>uid://dirf6ak2sn3qw::::res://grafiche/trashes/vetri.png
+indifferenziata.tscn::PackedScene::1677114205540491364::1708452273::0::1::::<><>::uid://duf10l3585cf4::::res://grafiche/trashes/indifferenziata.png
+plastic.tscn::PackedScene::1505568606635961460::1708452273::0::1::::<><>::uid://dyr2w6457ec0u::::res://grafiche/trashes/plastica.png
+umido.tscn::PackedScene::5264803732809789521::1708452273::0::1::::<><>::uid://df3mmdbtn3q4u::::res://grafiche/trashes/umido.png
+::res://characters/player/::1708452329
+base_character.tscn::PackedScene::1312740828415307561::1708452273::0::1::::<><>::res://scripts/base_character.gd<>uid://cw66uuqv0j6ay::::res://grafiche/character/trash.png
+glass_trash.tscn::PackedScene::1382333280105717985::1708452273::0::1::::<><>::uid://sx5wc835xoa0::::res://characters/player/base_character.tscn<>res://scripts/glass_trash.gd<>uid://bi3hfqvtcond4::::res://grafiche/character/glass trash.png
+organico_trash.tscn::PackedScene::1513199396633580975::1708452329::0::1::::<><>::uid://sx5wc835xoa0::::res://characters/player/base_character.tscn<>res://scripts/organico_trash.gd<>uid://deqeb6wg8c24i::::res://grafiche/character/organico trash.png
+paper_trash.tscn::PackedScene::6890116093380249556::1708452273::0::1::::<><>::uid://sx5wc835xoa0::::res://characters/player/base_character.tscn<>res://scripts/paper_trash.gd<>uid://b4jq81uewuwo5::::res://grafiche/character/paper trash.png
+plastic_trash.tscn::PackedScene::5813739947108055930::1708452273::0::1::::<><>::uid://sx5wc835xoa0::::res://characters/player/base_character.tscn<>res://scripts/plastic_trash.gd<>uid://ctr5ights0pjp::::res://grafiche/character/plastic trash.png
+::res://effects/::1708447186
+effetti.txt::TextFile::-1::1708447186::0::1::::<><>::
+::res://globals/::1708452052
+globals.gd::GDScript::-1::1708452052::0::1::::<>Node<>::
+::res://grafiche/::1708452338
+glass trash.png::CompressedTexture2D::3250123850431444686::1708452338::1708452339::1::::<><>::
+organico trash.png::CompressedTexture2D::824232041622873968::1708452338::1708452339::1::::<><>::
+paper trash.png::CompressedTexture2D::8107491280547503114::1708452337::1708452339::1::::<><>::
+plastic trash.png::CompressedTexture2D::7178049463998790409::1708452338::1708452339::1::::<><>::
+::res://grafiche/character/::1708450076
+glass trash.png::CompressedTexture2D::3006168831510929767::1708449984::1708450065::1::::<><>::
+organico trash.png::CompressedTexture2D::7473293785987733934::1708450004::1708450070::1::::<><>::
+paper trash.png::CompressedTexture2D::4441508348780848338::1708450044::1708450072::1::::<><>::
+plastic trash.png::CompressedTexture2D::6143359941304125829::1708450025::1708450073::1::::<><>::
+trash.png::CompressedTexture2D::6382910656624441356::1708184745::1708450076::1::::<><>::
+::res://grafiche/trashes/::1708450091
+cartone.png::CompressedTexture2D::4857398268603422287::1708276813::1708450087::1::::<><>::
+indifferenziata.png::CompressedTexture2D::8574984721689518863::1708276811::1708450088::1::::<><>::
+plastica.png::CompressedTexture2D::8880569040910867214::1708276812::1708450089::1::::<><>::
+umido.png::CompressedTexture2D::7568759039819815422::1708276813::1708450090::1::::<><>::
+vetri.png::CompressedTexture2D::7756226183276861070::1708186392::1708450091::1::::<><>::
+::res://scenes/::1708452273
+mainGame.tscn::PackedScene::6382997410578227511::1708452273::0::1::::<><>::res://scripts/mainGame.gd
+::res://scripts/::1708452264
+base_character.gd::GDScript::-1::1708450521::0::1::::<>Area2D<>::
+glass.gd::GDScript::-1::1708273176::0::1::::<>Area2D<>::
+glass_trash.gd::GDScript::-1::1708451107::0::1::::<>Area2D<>::
+mainGame.gd::GDScript::-1::1708451893::0::1::::<>Node<>::
+organico_trash.gd::GDScript::-1::1708452264::0::1::::<>Area2D<>::
+paper_trash.gd::GDScript::-1::1708450674::0::1::::<>Area2D<>::
+plastic_trash.gd::GDScript::-1::1708450619::0::1::::<>Area2D<>::

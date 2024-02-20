@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cbg7v0vb8dau6"
-path="res://.godot/imported/cartone.png-549049c33d0b92ccf35782aa03f1bd0c.ctex"
+uid="uid://ctr5ights0pjp"
+path="res://.godot/imported/plastic trash.png-2d27edb7e54c58fb9c95e7d028a30153.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://grafiche/cartone.png"
-dest_files=["res://.godot/imported/cartone.png-549049c33d0b92ccf35782aa03f1bd0c.ctex"]
+source_file="res://grafiche/character/plastic trash.png"
+dest_files=["res://.godot/imported/plastic trash.png-2d27edb7e54c58fb9c95e7d028a30153.ctex"]
 
 [params]
 

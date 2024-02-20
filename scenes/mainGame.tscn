@@ -1,7 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://cw68bghf7paod"]
+[gd_scene load_steps=2 format=3 uid="uid://cw68bghf7paod"]
 
 [ext_resource type="Script" path="res://scripts/mainGame.gd" id="1_fxxsq"]
-[ext_resource type="PackedScene" uid="uid://sx5wc835xoa0" path="res://characters/base_character.tscn" id="2_ihepi"]
 
 [node name="mainGame" type="Node"]
 script = ExtResource("1_fxxsq")
@@ -51,15 +50,9 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -20.0
-offset_top = -40.0
 offset_right = 20.0
 grow_horizontal = 2
 grow_vertical = 0
-
-[node name="base character" parent="CanvasLayer/Control/Container" instance=ExtResource("2_ihepi")]
-position = Vector2(-10, -14)
-scale = Vector2(3.41126, 3.41126)
 
 [node name="ColorRect" type="ColorRect" parent="."]
 anchors_preset = 15

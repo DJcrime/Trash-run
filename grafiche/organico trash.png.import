@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://duf10l3585cf4"
-path="res://.godot/imported/indifferenziata.png-f69ff7c2787d6e33c0a89819805a58b9.ctex"
+uid="uid://l0i8mnfquw2c"
+path="res://.godot/imported/organico trash.png-b91388c1512ab6148dc497b81c66e6d8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://grafiche/indifferenziata.png"
-dest_files=["res://.godot/imported/indifferenziata.png-f69ff7c2787d6e33c0a89819805a58b9.ctex"]
+source_file="res://grafiche/organico trash.png"
+dest_files=["res://.godot/imported/organico trash.png-b91388c1512ab6148dc497b81c66e6d8.ctex"]
 
 [params]
 

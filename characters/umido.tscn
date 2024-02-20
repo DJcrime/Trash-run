@@ -1,11 +1,12 @@
 [gd_scene load_steps=3 format=3 uid="uid://chaksv2w40rk8"]
 
-[ext_resource type="Texture2D" uid="uid://df3mmdbtn3q4u" path="res://grafiche/umido.png" id="1_o7d2n"]
+[ext_resource type="Texture2D" uid="uid://df3mmdbtn3q4u" path="res://grafiche/trashes/umido.png" id="1_o7d2n"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lvnce"]
 size = Vector2(59, 55)
 
 [node name="umido" type="Area2D" groups=["umido"]]
+collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1.5, -2.5)
