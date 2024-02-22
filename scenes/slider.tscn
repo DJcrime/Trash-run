@@ -1,0 +1,284 @@
+[gd_scene load_steps=11 format=3 uid="uid://b5i3m64dgmjcy"]
+
+[ext_resource type="Script" path="res://scripts/sliderBox.gd" id="1_q2gyo"]
+[ext_resource type="Script" path="res://scripts/slider.gd" id="1_yd6dv"]
+[ext_resource type="Texture2D" uid="uid://l0i8mnfquw2c" path="res://grafiche/character/organico trash.png" id="3_a6otm"]
+[ext_resource type="Texture2D" uid="uid://dajdoqnm37sq8" path="res://grafiche/character/plastic trash.png" id="4_sy8fd"]
+[ext_resource type="Texture2D" uid="uid://bmknchdqra5ag" path="res://grafiche/character/glass trash.png" id="5_sbuk4"]
+[ext_resource type="Texture2D" uid="uid://dnrlgxt3h06l7" path="res://grafiche/character/paper trash.png" id="6_7e6qc"]
+[ext_resource type="Texture2D" uid="uid://cw66uuqv0j6ay" path="res://grafiche/character/trash.png" id="7_t1kmk"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ebiot"]
+font_size = 66
+outline_size = 65
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_p5ikl"]
+font_size = 150
+
+[sub_resource type="LabelSettings" id="LabelSettings_45hh0"]
+font_size = 150
+
+[node name="slider" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_yd6dv")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 0.00195313
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.4, 0.223529, 0.0196078, 1)
+script = ExtResource("1_q2gyo")
+
+[node name="TextureRect" type="TextureRect" parent="Control/ColorRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -276.001
+offset_top = -269.0
+offset_right = 342.999
+offset_bottom = 241.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_a6otm")
+
+[node name="Label" type="Label" parent="Control/ColorRect"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -255.001
+offset_right = 254.999
+offset_bottom = 75.0
+grow_horizontal = 2
+text = "COMPOST BIN"
+label_settings = SubResource("LabelSettings_ebiot")
+horizontal_alignment = 1
+
+[node name="ColorRect2" type="ColorRect" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1152.0
+offset_right = 1152.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 0.231373, 1)
+script = ExtResource("1_q2gyo")
+
+[node name="TextureRect" type="TextureRect" parent="Control/ColorRect2"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -299.0
+offset_top = -291.0
+offset_right = 320.0
+offset_bottom = 219.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_sy8fd")
+
+[node name="Label" type="Label" parent="Control/ColorRect2"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -255.001
+offset_right = 254.999
+offset_bottom = 75.0
+grow_horizontal = 2
+text = "PLASTIC BIN"
+label_settings = SubResource("LabelSettings_ebiot")
+horizontal_alignment = 1
+
+[node name="ColorRect3" type="ColorRect" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1152.0
+offset_right = -1152.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 1, 0, 1)
+script = ExtResource("1_q2gyo")
+
+[node name="TextureRect" type="TextureRect" parent="Control/ColorRect3"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -238.0
+offset_top = -284.0
+offset_right = 381.0
+offset_bottom = 226.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_sbuk4")
+
+[node name="Label" type="Label" parent="Control/ColorRect3"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -255.001
+offset_right = 254.999
+offset_bottom = 75.0
+grow_horizontal = 2
+text = "GLASS BIN"
+label_settings = SubResource("LabelSettings_ebiot")
+horizontal_alignment = 1
+
+[node name="ColorRect4" type="ColorRect" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -2304.0
+offset_right = -2304.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 1, 1)
+script = ExtResource("1_q2gyo")
+
+[node name="TextureRect" type="TextureRect" parent="Control/ColorRect4"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -276.0
+offset_top = -319.0
+offset_right = 343.0
+offset_bottom = 191.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_7e6qc")
+
+[node name="Label" type="Label" parent="Control/ColorRect4"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -255.001
+offset_right = 254.999
+offset_bottom = 75.0
+grow_horizontal = 2
+text = "PAPER BIN"
+label_settings = SubResource("LabelSettings_ebiot")
+horizontal_alignment = 1
+
+[node name="ColorRect5" type="ColorRect" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2304.0
+offset_right = 2304.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.568627, 0.568627, 0.568627, 1)
+script = ExtResource("1_q2gyo")
+
+[node name="TextureRect" type="TextureRect" parent="Control/ColorRect5"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -280.0
+offset_top = -270.0
+offset_right = 339.0
+offset_bottom = 240.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("7_t1kmk")
+
+[node name="Label" type="Label" parent="Control/ColorRect5"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -255.001
+offset_right = 254.999
+offset_bottom = 75.0
+grow_horizontal = 2
+text = "GARBAGE BIN"
+label_settings = SubResource("LabelSettings_ebiot")
+horizontal_alignment = 1
+
+[node name="leftButton" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -11.5
+offset_right = 40.0
+offset_bottom = 11.5
+grow_vertical = 2
+text = "<"
+label_settings = SubResource("LabelSettings_p5ikl")
+
+[node name="ButtonLeft" type="Button" parent="leftButton"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="rightButtone" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -40.0
+offset_top = -11.5
+offset_bottom = 11.5
+grow_horizontal = 0
+grow_vertical = 2
+text = ">"
+label_settings = SubResource("LabelSettings_45hh0")
+
+[node name="ButtonRight" type="Button" parent="rightButtone"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[connection signal="pressed" from="leftButton/ButtonLeft" to="." method="_on_button_left_pressed"]
+[connection signal="pressed" from="rightButtone/ButtonRight" to="." method="_on_button_right_pressed"]
