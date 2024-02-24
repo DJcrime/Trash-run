@@ -1,5 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://chaksv2w40rk8"]
+[gd_scene load_steps=4 format=3 uid="uid://chaksv2w40rk8"]
 
+[ext_resource type="Texture2D" uid="uid://ewyak0kowdku" path="res://grafiche/trashes/Shadows/umidoShadow.png" id="1_3ayep"]
 [ext_resource type="Texture2D" uid="uid://df3mmdbtn3q4u" path="res://grafiche/trashes/umido.png" id="1_o7d2n"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lvnce"]
@@ -11,6 +12,11 @@ collision_layer = 2
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1.5, -2.5)
 shape = SubResource("RectangleShape2D_lvnce")
+
+[node name="UmidoShadow" type="Sprite2D" parent="."]
+modulate = Color(0.329412, 0.0941176, 0, 1)
+position = Vector2(1, -4)
+texture = ExtResource("1_3ayep")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_o7d2n")

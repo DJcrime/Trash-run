@@ -1,9 +1,9 @@
-res://scenes/slider.tscn
-res://scripts/sliderBox.gd
+res://characters/carton.tscn
+res://characters/indifferenziata.tscn
+res://characters/plastic.tscn
+res://characters/umido.tscn
+res://characters/glass.tscn
 res://scenes/mainGame.tscn
 res://scenes/menu.tscn
-res://scenes/changeCharacter.tscn
 res://characters/player/base_character.tscn
-res://scripts/slider.gd
-res://scripts/menu.gd
-res://characters/carton.tscn
+res://scenes/slider.tscn

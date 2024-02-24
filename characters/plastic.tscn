@@ -1,5 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://vpkq3g5h5na7"]
+[gd_scene load_steps=4 format=3 uid="uid://vpkq3g5h5na7"]
 
+[ext_resource type="Texture2D" uid="uid://ygn80r1asad1" path="res://grafiche/trashes/Shadows/plasticaShadow.png" id="1_5ikii"]
 [ext_resource type="Texture2D" uid="uid://dyr2w6457ec0u" path="res://grafiche/trashes/plastica.png" id="1_f2ach"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e7g6r"]
@@ -11,6 +12,11 @@ collision_layer = 2
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(7.5, -1)
 shape = SubResource("RectangleShape2D_e7g6r")
+
+[node name="PlasticaShadow" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 0, 1)
+position = Vector2(0, -13)
+texture = ExtResource("1_5ikii")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_f2ach")
