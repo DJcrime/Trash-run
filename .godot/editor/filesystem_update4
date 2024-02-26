@@ -1,9 +1,9 @@
-res://characters/carton.tscn
 res://characters/indifferenziata.tscn
-res://characters/plastic.tscn
-res://characters/umido.tscn
-res://characters/glass.tscn
 res://scenes/mainGame.tscn
 res://scenes/menu.tscn
 res://characters/player/base_character.tscn
 res://scenes/slider.tscn
+res://characters/carton.tscn
+res://characters/plastic.tscn
+res://characters/umido.tscn
+res://characters/glass.tscn
