@@ -2,7 +2,7 @@ extends Node
 
 #Array scene spazzatura
 var trashes:Array=Array(["res://characters/glass.tscn",
-						"res://characters/glass.tscn",
+						"res://characters/carton.tscn",
 						"res://characters/indifferenziata.tscn",
 						"res://characters/plastic.tscn",
 						"res://characters/umido.tscn"])

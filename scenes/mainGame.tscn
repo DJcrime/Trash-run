@@ -63,12 +63,22 @@ grow_vertical = 2
 mouse_filter = 2
 color = Color(0.0784314, 0.898039, 1, 1)
 
+[node name="trash" type="Node2D" parent="."]
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -13.0
+grow_horizontal = 2
+grow_vertical = 0
+color = Color(0.54902, 0.54902, 0.54902, 1)
+
 [node name="timer" type="Node" parent="."]
 
 [node name="trashSpawn" type="Timer" parent="timer"]
 autostart = true
-
-[node name="trash" type="Node2D" parent="."]
 
 [node name="deleteBarrier" type="Node2D" parent="."]
 position = Vector2(0, 648)

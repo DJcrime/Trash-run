@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://b5i3m64dgmjcy"]
+[gd_scene load_steps=12 format=3 uid="uid://b5i3m64dgmjcy"]
 
 [ext_resource type="Script" path="res://scripts/sliderBox.gd" id="1_q2gyo"]
 [ext_resource type="Script" path="res://scripts/slider.gd" id="1_yd6dv"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://bmknchdqra5ag" path="res://grafiche/character/glass trash.png" id="5_sbuk4"]
 [ext_resource type="Texture2D" uid="uid://dnrlgxt3h06l7" path="res://grafiche/character/paper trash.png" id="6_7e6qc"]
 [ext_resource type="Texture2D" uid="uid://cw66uuqv0j6ay" path="res://grafiche/character/trash.png" id="7_t1kmk"]
+[ext_resource type="Texture2D" uid="uid://60lsrl5h35kv" path="res://grafiche/scenes/back button.png" id="8_h4fwm"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_ebiot"]
 font_size = 66
@@ -75,6 +76,29 @@ text = "COMPOST BIN"
 label_settings = SubResource("LabelSettings_ebiot")
 horizontal_alignment = 1
 
+[node name="Description" type="Button" parent="Control/ColorRect"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -163.0
+offset_right = 1.99805
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+text = "His name is Bino, and he is a compost bin that lives in a landfill, but he doesn't let his situation get him down. He knows that 
+organic waste can become a valuable resource if it is recycled properly. That's why Bino has decided to embark on a journey to 
+discover the different ways of transforming his friends into compost, biogas, fertilizers and more. Along the way, Bino will meet 
+many other bins that will teach him the rules of recycling and show him the wonders of nature. Bino is a curious and adventurous 
+character, who wants to learn and have fun. Would you like to join him on his fantastic journey?
+"
+text_overrun_behavior = 4
+clip_text = true
+
+[node name="umido" type="VisibleOnScreenNotifier2D" parent="Control/ColorRect"]
+position = Vector2(580, 287)
+
 [node name="ColorRect2" type="ColorRect" parent="Control"]
 layout_mode = 1
 anchors_preset = 15
@@ -114,6 +138,28 @@ grow_horizontal = 2
 text = "PLASTIC BIN"
 label_settings = SubResource("LabelSettings_ebiot")
 horizontal_alignment = 1
+
+[node name="Description" type="Button" parent="Control/ColorRect2"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -163.0
+offset_right = 1.99805
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+text = "Her name is Pina, and she is a plastic bin that lives in a recycling center. She has always loved fashion and 
+design, and she enjoys changing her look with the different bottles, bags and containers that she 
+receives. She is a creative and generous character, who tries to help the other bins to find their style and 
+personality. She loves to share her ideas and tips with her friends, and she is interested in the latest 
+trends and news. Her dream is to be recycled and transformed into something elegant and original, like a dress or an accessory."
+text_overrun_behavior = 4
+clip_text = true
+
+[node name="plastic" type="VisibleOnScreenNotifier2D" parent="Control/ColorRect2"]
+position = Vector2(605, 297)
 
 [node name="ColorRect3" type="ColorRect" parent="Control"]
 layout_mode = 1
@@ -155,6 +201,28 @@ text = "GLASS BIN"
 label_settings = SubResource("LabelSettings_ebiot")
 horizontal_alignment = 1
 
+[node name="Description" type="Button" parent="Control/ColorRect3"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -163.0
+offset_right = 1.99805
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+text = "Her name is Vicky, and she is a glass bin that lives in a recycling center. She has always loved beauty and art, and she gets excited 
+to see the colors and shapes of the different bottles and jars that she receives. She is an elegant and kind character, who 
+tries to help the other bins to find their expression and creativity. She loves to share her ideas and tips with her friends, and she 
+is interested in the latest trends and news. Her dream is to be recycled and transformed into something splendid and 
+original, like a vase or a necklace."
+text_overrun_behavior = 4
+clip_text = true
+
+[node name="glass" type="VisibleOnScreenNotifier2D" parent="Control/ColorRect3"]
+position = Vector2(595, 297)
+
 [node name="ColorRect4" type="ColorRect" parent="Control"]
 layout_mode = 1
 anchors_preset = 15
@@ -195,6 +263,28 @@ text = "PAPER BIN"
 label_settings = SubResource("LabelSettings_ebiot")
 horizontal_alignment = 1
 
+[node name="Description" type="Button" parent="Control/ColorRect4"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -163.0
+offset_right = 1.99805
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+text = "Her name is Clara, and she is a paper bin that lives in a recycling center. She has always loved fantasy and adventure, and she gets 
+excited to imagine the stories and the worlds of the various comics, novels and catalogs that she receives. She is a dreamy 
+and brave character, who tries to help the other bins to find their passion and fun. She loves to share her adventures and her 
+emotions with her friends, and she is interested in the latest news and surprises. Her dream is to be recycled and 
+transformed into something fantastic and engaging, like a movie or a video game."
+text_overrun_behavior = 4
+clip_text = true
+
+[node name="paper" type="VisibleOnScreenNotifier2D" parent="Control/ColorRect4"]
+position = Vector2(600, 262)
+
 [node name="ColorRect5" type="ColorRect" parent="Control"]
 layout_mode = 1
 anchors_preset = 15
@@ -234,6 +324,26 @@ grow_horizontal = 2
 text = "GARBAGE BIN"
 label_settings = SubResource("LabelSettings_ebiot")
 horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="Control/ColorRect5"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -163.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "His name is Bruno, and he is a mixed waste bin that lives in a disposal center. He has always had a great curiosity and a desire to learn, and he 
+enjoys discovering the stories and the origins of the various objects that he receives. He is an intelligent and funny character, who 
+tries to help the other bins to understand the value and the potential of their waste. He loves to share his knowledge and his curiosity 
+with his friends, and he is interested in the latest news and discoveries. His dream is to be recycled and transformed into something 
+useful and interesting, like a book or a toy."
+text_overrun_behavior = 4
+clip_text = true
+
+[node name="garbage" type="VisibleOnScreenNotifier2D" parent="Control/ColorRect5"]
+position = Vector2(569, 287)
 
 [node name="leftButton" type="Label" parent="."]
 layout_mode = 1
@@ -280,5 +390,32 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.198
+anchor_bottom = 0.11
+offset_right = -43.096
+offset_bottom = -13.28
+scale = Vector2(1.23, 1.23)
+texture = ExtResource("8_h4fwm")
+expand_mode = 1
+
+[node name="Button" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.197
+anchor_bottom = 0.111
+offset_right = 0.0559845
+offset_bottom = 0.071991
+flat = true
+
+[connection signal="screen_entered" from="Control/ColorRect/umido" to="." method="_on_umido_screen_entered"]
+[connection signal="screen_entered" from="Control/ColorRect2/plastic" to="." method="_on_plastic_screen_entered"]
+[connection signal="screen_entered" from="Control/ColorRect3/glass" to="." method="_on_glass_screen_entered"]
+[connection signal="screen_entered" from="Control/ColorRect4/paper" to="." method="_on_paper_screen_entered"]
+[connection signal="screen_entered" from="Control/ColorRect5/garbage" to="." method="_on_garbage_screen_entered"]
 [connection signal="pressed" from="leftButton/ButtonLeft" to="." method="_on_button_left_pressed"]
 [connection signal="pressed" from="rightButtone/ButtonRight" to="." method="_on_button_right_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
