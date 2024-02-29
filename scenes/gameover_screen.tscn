@@ -1,0 +1,98 @@
+[gd_scene load_steps=5 format=3 uid="uid://dpyea1ol1jf1e"]
+
+[ext_resource type="Texture2D" uid="uid://cc0nspsdbsk5x" path="res://grafiche/scenes/gameover.png" id="1_abjuk"]
+[ext_resource type="Script" path="res://scripts/gameover_screen.gd" id="1_x52b6"]
+[ext_resource type="Texture2D" uid="uid://60lsrl5h35kv" path="res://grafiche/scenes/back button.png" id="2_b1e42"]
+[ext_resource type="Texture2D" uid="uid://dbqqtqlkal0ge" path="res://grafiche/scenes/restart button.png" id="3_lptag"]
+
+[node name="gameover screen" type="Control"]
+layout_mode = 3
+anchor_left = 0.289
+anchor_top = 0.094
+anchor_right = 0.755
+anchor_bottom = 1.0
+offset_left = 0.071991
+offset_top = 0.0879974
+offset_right = 0.239929
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_x52b6")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.117647, 0.117647, 0.117647, 0.694118)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 106.0
+grow_horizontal = 2
+texture = ExtResource("1_abjuk")
+expand_mode = 1
+
+[node name="backbutton" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.335
+anchor_top = 0.315
+anchor_right = 0.665
+anchor_bottom = 0.426
+offset_left = 0.104996
+offset_top = 0.094986
+offset_right = -0.105011
+offset_bottom = -0.0620117
+texture = ExtResource("2_b1e42")
+
+[node name="restartbutton" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.335
+anchor_top = 0.479
+anchor_right = 0.665
+anchor_bottom = 0.589
+offset_left = 0.104996
+offset_top = -0.173004
+offset_right = -0.105011
+offset_bottom = 0.256958
+texture = ExtResource("3_lptag")
+
+[node name="back" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.335
+anchor_top = 0.315
+anchor_right = 0.667
+anchor_bottom = 0.424
+offset_left = 0.104996
+offset_top = 0.094986
+offset_right = -0.179016
+offset_bottom = 0.111984
+grow_horizontal = 2
+grow_vertical = 2
+icon_alignment = 1
+expand_icon = true
+
+[node name="restart" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.335
+anchor_top = 0.479
+anchor_right = 0.665
+anchor_bottom = 0.589
+offset_left = 0.104996
+offset_top = -0.173004
+offset_right = -0.105011
+offset_bottom = 0.256958
+grow_horizontal = 2
+grow_vertical = 2
+
+[connection signal="pressed" from="back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="restart" to="." method="_on_restart_pressed"]

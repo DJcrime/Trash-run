@@ -1,6 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://cw68bghf7paod"]
+[gd_scene load_steps=7 format=3 uid="uid://cw68bghf7paod"]
 
 [ext_resource type="Script" path="res://scripts/mainGame.gd" id="1_fxxsq"]
+[ext_resource type="Texture2D" uid="uid://dq5om4ec7tyyo" path="res://grafiche/scenes/corkboards.png" id="2_csg46"]
+[ext_resource type="Texture2D" uid="uid://kwjfple8swhl" path="res://grafiche/scenes/pause button.png" id="2_o1nq7"]
+[ext_resource type="PackedScene" uid="uid://dpyea1ol1jf1e" path="res://scenes/gameover_screen.tscn" id="3_842o6"]
+[ext_resource type="Texture2D" uid="uid://txvuvuhwe6im" path="res://grafiche/scenes/postit.png" id="3_tait6"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_062q6"]
+font_size = 61
+outline_size = 22
+outline_color = Color(0, 0, 0, 1)
 
 [node name="mainGame" type="Node"]
 script = ExtResource("1_fxxsq")
@@ -14,6 +23,50 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="Container" type="Container" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_right = 20.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="pauseMenu" type="Control" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="score" type="Label" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -40.0
+offset_right = 40.0
+offset_bottom = 77.0
+grow_horizontal = 2
+text = "0"
+label_settings = SubResource("LabelSettings_062q6")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.914
+anchor_right = 1.001
+anchor_bottom = 0.154
+offset_left = 0.0720215
+offset_right = -0.1521
+offset_bottom = 0.207993
+texture = ExtResource("2_o1nq7")
 
 [node name="left" type="Button" parent="CanvasLayer/Control"]
 modulate = Color(1, 1, 1, 0)
@@ -43,16 +96,22 @@ grow_horizontal = 2
 grow_vertical = 2
 flat = true
 
-[node name="Container" type="Container" parent="CanvasLayer/Control"]
+[node name="pause" type="Button" parent="CanvasLayer/Control"]
 layout_mode = 1
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_right = 20.0
-grow_horizontal = 2
-grow_vertical = 0
+anchors_preset = -1
+anchor_left = 0.916
+anchor_right = 1.0
+anchor_bottom = 0.148
+offset_left = -0.232056
+offset_bottom = 0.0960007
+grow_horizontal = 0
+icon_alignment = 1
+expand_icon = true
+
+[node name="gameover screen" parent="CanvasLayer/Control" instance=ExtResource("3_842o6")]
+visible = false
+layout_mode = 1
+grow_horizontal = 0
 
 [node name="ColorRect" type="ColorRect" parent="."]
 anchors_preset = 15
@@ -87,8 +146,33 @@ position = Vector2(0, 648)
 position = Vector2(578, 0)
 scale = Vector2(58.8, 1)
 
+[node name="corkboardPostit" type="Node2D" parent="."]
+position = Vector2(-1, -33)
+
+[node name="Corkboards" type="Sprite2D" parent="corkboardPostit"]
+position = Vector2(121, 82)
+scale = Vector2(5.36667, 5.53333)
+texture = ExtResource("2_csg46")
+
+[node name="Postit" type="Sprite2D" parent="corkboardPostit"]
+position = Vector2(67, 102)
+scale = Vector2(2.57143, 2.41429)
+texture = ExtResource("3_tait6")
+
+[node name="Postit2" type="Sprite2D" parent="corkboardPostit"]
+position = Vector2(138, 102)
+scale = Vector2(2.57143, 2.41429)
+texture = ExtResource("3_tait6")
+
+[node name="Postit3" type="Sprite2D" parent="corkboardPostit"]
+position = Vector2(208, 101)
+scale = Vector2(2.57143, 2.41429)
+texture = ExtResource("3_tait6")
+
+[connection signal="child_exiting_tree" from="CanvasLayer/Control/pauseMenu" to="." method="_on_pause_menu_child_exiting_tree"]
 [connection signal="button_down" from="CanvasLayer/Control/left" to="." method="_on_left_button_down"]
 [connection signal="button_up" from="CanvasLayer/Control/left" to="." method="_on_left_button_up"]
 [connection signal="button_down" from="CanvasLayer/Control/right" to="." method="_on_right_button_down"]
 [connection signal="button_up" from="CanvasLayer/Control/right" to="." method="_on_right_button_up"]
+[connection signal="pressed" from="CanvasLayer/Control/pause" to="." method="_on_pause_pressed"]
 [connection signal="timeout" from="timer/trashSpawn" to="." method="_on_trash_spawn_timeout"]

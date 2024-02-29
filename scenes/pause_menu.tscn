@@ -1,0 +1,118 @@
+[gd_scene load_steps=6 format=3 uid="uid://j8wyjxin0oid"]
+
+[ext_resource type="Texture2D" uid="uid://c70h8qtq727m4" path="res://grafiche/scenes/pause.png" id="1_a14jt"]
+[ext_resource type="Script" path="res://scripts/gameover_screen.gd" id="1_g3312"]
+[ext_resource type="Texture2D" uid="uid://60lsrl5h35kv" path="res://grafiche/scenes/back button.png" id="2_d43cp"]
+[ext_resource type="Texture2D" uid="uid://dbqqtqlkal0ge" path="res://grafiche/scenes/restart button.png" id="3_ffk6c"]
+[ext_resource type="Texture2D" uid="uid://cyli3e75wyn6k" path="res://grafiche/scenes/continue button.png" id="5_scmpu"]
+
+[node name="pause menu" type="Control"]
+layout_mode = 3
+anchor_left = 0.289
+anchor_top = 0.094
+anchor_right = 0.755
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_g3312")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.117647, 0.117647, 0.117647, 0.694118)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 106.0
+grow_horizontal = 2
+texture = ExtResource("1_a14jt")
+expand_mode = 1
+
+[node name="backbutton" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.335
+anchor_top = 0.315
+anchor_right = 0.665
+anchor_bottom = 0.426
+offset_left = 0.104996
+offset_top = 0.094986
+offset_right = -0.105011
+offset_bottom = -0.0620117
+texture = ExtResource("2_d43cp")
+
+[node name="restartbutton" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.335
+anchor_top = 0.479
+anchor_right = 0.665
+anchor_bottom = 0.589
+offset_left = 0.104996
+offset_top = -0.173004
+offset_right = -0.105011
+offset_bottom = 0.256958
+texture = ExtResource("3_ffk6c")
+
+[node name="continue button" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 180.0
+offset_top = 382.0
+offset_right = 357.0
+offset_bottom = 448.0
+texture = ExtResource("5_scmpu")
+
+[node name="back" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.335
+anchor_top = 0.315
+anchor_right = 0.667
+anchor_bottom = 0.424
+offset_left = 0.104996
+offset_top = 0.094986
+offset_right = -0.179016
+offset_bottom = 0.111984
+grow_horizontal = 2
+grow_vertical = 2
+icon_alignment = 1
+expand_icon = true
+
+[node name="restart" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.335
+anchor_top = 0.479
+anchor_right = 0.665
+anchor_bottom = 0.589
+offset_left = 0.104996
+offset_top = -0.173004
+offset_right = -0.105011
+offset_bottom = 0.256958
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="continue" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.335
+anchor_top = 0.651
+anchor_right = 0.665
+anchor_bottom = 0.763
+offset_left = 0.16127
+offset_top = -0.194305
+offset_right = 0.00668335
+offset_bottom = 0.0518494
+
+[connection signal="pressed" from="back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="continue" to="." method="_on_continue_pressed"]
