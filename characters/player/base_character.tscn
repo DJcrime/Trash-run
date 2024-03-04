@@ -11,13 +11,15 @@ height = 38.0
 collision_mask = 6
 script = ExtResource("1_djjwm")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -20.805)
-shape = SubResource("CapsuleShape2D_dir4n")
-
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, -15.805)
 texture = ExtResource("2_kawh1")
 offset = Vector2(1.5, -2.195)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -20.805)
+shape = SubResource("CapsuleShape2D_dir4n")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]

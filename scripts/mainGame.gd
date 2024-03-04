@@ -47,20 +47,24 @@ func checkPunteggio():
 	$CanvasLayer/Control/score.text=str(Globals.score)
 
 func _on_left_button_down():
+	Globals.anim=2
 	right=false
 	left=true
 
 
 func _on_right_button_down():
+	Globals.anim=1
 	right=true
 	left=false
 
 
 func _on_right_button_up():
+	Globals.anim=0
 	right=false
 
 
 func _on_left_button_up():
+	Globals.anim=0
 	left=false
 
 

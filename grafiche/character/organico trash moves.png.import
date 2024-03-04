@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://l0i8mnfquw2c"
-path="res://.godot/imported/organico trash.png-fe526f213da3ce87e541dbcfa1a01df1.ctex"
+uid="uid://bqmenmwxn6ev0"
+path="res://.godot/imported/organico trash moves.png-795246604f116747e3a623fb61a91776.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://grafiche/character/organico trash.png"
-dest_files=["res://.godot/imported/organico trash.png-fe526f213da3ce87e541dbcfa1a01df1.ctex"]
+source_file="res://grafiche/character/organico trash moves.png"
+dest_files=["res://.godot/imported/organico trash moves.png-795246604f116747e3a623fb61a91776.ctex"]
 
 [params]
 

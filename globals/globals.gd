@@ -2,6 +2,7 @@ extends Node
 #segnali
 signal checkVita
 signal checkPunteggio
+signal checkAnim
 #varibile personaggio selezionato
 var chosenCharacter:PackedScene=preload("res://characters/player/paper_trash.tscn")
 #variabile che indice l'altezza a cui la spazzatura viene eliminata
@@ -19,4 +20,9 @@ var score:int=0:
 	set(value):
 		score=value
 		checkPunteggio.emit()
+#variabile per le animazioni di movimento
+var anim:int=0:
+	set(value):
+		anim=value
+		checkAnim.emit()
 

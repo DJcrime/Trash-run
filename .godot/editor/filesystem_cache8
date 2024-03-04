@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1709219578
+::res://::1709569473
 icon.svg::CompressedTexture2D::1168730199758383366::1708031057::1708964566::1::::<><>::
 ::res://addons/::1708272191
 ::res://addons/debug_menu/::1708272191
@@ -14,34 +14,37 @@ glass.tscn::PackedScene::5061338461740518581::1709043384::0::1::::<><>::res://sc
 indifferenziata.tscn::PackedScene::1677114205540491364::1709043384::0::1::::<><>::uid://duf10l3585cf4::::res://grafiche/trashes/indifferenziata.png<>uid://bivx2ivtjhqrd::::res://grafiche/trashes/Shadows/indifferenziataShadow.png
 plastic.tscn::PackedScene::1505568606635961460::1709043384::0::1::::<><>::uid://ygn80r1asad1::::res://grafiche/trashes/Shadows/plasticaShadow.png<>uid://dyr2w6457ec0u::::res://grafiche/trashes/plastica.png
 umido.tscn::PackedScene::5264803732809789521::1709043384::0::1::::<><>::uid://ewyak0kowdku::::res://grafiche/trashes/Shadows/umidoShadow.png<>uid://df3mmdbtn3q4u::::res://grafiche/trashes/umido.png
-::res://characters/player/::1709225909
-base_character.tscn::PackedScene::1312740828415307561::1709225909::0::1::::<><>::res://scripts/base_character.gd<>uid://cw66uuqv0j6ay::::res://grafiche/character/trash.png
+::res://characters/player/::1709576193
+base_character.tscn::PackedScene::1312740828415307561::1709576193::0::1::::<><>::res://scripts/base_character.gd<>uid://cw66uuqv0j6ay::::res://grafiche/character/trash.png
 glass_trash.tscn::PackedScene::1382333280105717985::1708452273::0::1::::<><>::uid://sx5wc835xoa0::::res://characters/player/base_character.tscn<>res://scripts/glass_trash.gd<>uid://bi3hfqvtcond4::::res://grafiche/character/glass trash.png
-organico_trash.tscn::PackedScene::1513199396633580975::1708452462::0::1::::<><>::uid://sx5wc835xoa0::::res://characters/player/base_character.tscn<>res://scripts/organico_trash.gd<>uid://deqeb6wg8c24i::::res://grafiche/character/organico trash.png
+organico_trash.tscn::PackedScene::1513199396633580975::1709576193::0::1::::<><>::uid://sx5wc835xoa0::::res://characters/player/base_character.tscn<>res://scripts/organico_trash.gd<>uid://bqmenmwxn6ev0::::res://grafiche/character/organico trash moves.png
 paper_trash.tscn::PackedScene::6890116093380249556::1708452273::0::1::::<><>::uid://sx5wc835xoa0::::res://characters/player/base_character.tscn<>res://scripts/paper_trash.gd<>uid://b4jq81uewuwo5::::res://grafiche/character/paper trash.png
 plastic_trash.tscn::PackedScene::5813739947108055930::1708452273::0::1::::<><>::uid://sx5wc835xoa0::::res://characters/player/base_character.tscn<>res://scripts/plastic_trash.gd<>uid://ctr5ights0pjp::::res://grafiche/character/plastic trash.png
 ::res://effects/::1708447186
 effetti.txt::TextFile::-1::1708447186::0::1::::<><>::
-::res://globals/::1709225529
-globals.gd::GDScript::-1::1709225529::0::1::::<>Node<>::
+::res://globals/::1709575241
+globals.gd::GDScript::-1::1709575241::0::1::::<>Node<>::
 ::res://grafiche/::1708616337
-::res://grafiche/character/::1708617900
+::res://grafiche/character/::1709575589
 glass trash.png::CompressedTexture2D::3250123850431444686::1708452338::1708616330::1::::<><>::
-organico trash.png::CompressedTexture2D::824232041622873968::1708452338::1708616333::1::::<><>::
+organico trash moves.png::CompressedTexture2D::3534481463571675803::1709575398::1709575589::1::::<><>::
+organico trash static.png::CompressedTexture2D::261620095230159397::1709571565::1709572836::1::::<><>::
 paper trash.png::CompressedTexture2D::8107491280547503114::1708452337::1708616335::1::::<><>::
 plastic trash.png::CompressedTexture2D::7178049463998790409::1708452338::1708616338::1::::<><>::
+trash moves.png::CompressedTexture2D::2653994504392080676::1709576340::1709576343::1::::<><>::
 trash.png::CompressedTexture2D::6382910656624441356::1708617899::1708617900::1::::<><>::
-::res://grafiche/scenes/::1709226234
-back button.png::CompressedTexture2D::2228164539104571185::1709224253::1709224266::1::::<><>::
-background.png::CompressedTexture2D::856469129636817628::1709224294::1709224297::1::::<><>::
-continue button.png::CompressedTexture2D::6480617769085669052::1709226362::1709226363::1::::<><>::
+::res://grafiche/scenes/::1709570270
+back button.png::CompressedTexture2D::2228164539104571185::1709570130::1709570270::1::::<><>::
+background.png::CompressedTexture2D::856469129636817628::1709570027::1709570028::1::::<><>::
+continue button.png::CompressedTexture2D::6480617769085669052::1709570155::1709570270::1::::<><>::
 corkboards.png::CompressedTexture2D::8345087878825984630::1709222151::1709222152::1::::<><>::
-gameover.png::CompressedTexture2D::4965650779505107771::1709225355::1709225356::1::::<><>::
+gameover.png::CompressedTexture2D::4965650779505107771::1709570264::1709570270::1::::<><>::
+help button.png::CompressedTexture2D::3997757981855323314::1709569710::1709569711::1::::<><>::
 pause button.png::CompressedTexture2D::747860933943736241::1709222013::1709222014::1::::<><>::
-pause.png::CompressedTexture2D::7070978628298673997::1709225708::1709225709::1::::<><>::
+pause.png::CompressedTexture2D::7070978628298673997::1709570174::1709570270::1::::<><>::
 postit.png::CompressedTexture2D::1382380624426265848::1709220873::1709220874::1::::<><>::
 postitcompleted.png::CompressedTexture2D::8588850653385430590::1709221732::1709221733::1::::<><>::
-restart button.png::CompressedTexture2D::7263487198572014988::1709224204::1709224205::1::::<><>::
+restart button.png::CompressedTexture2D::7263487198572014988::1709570219::1709570270::1::::<><>::
 ::res://grafiche/trashes/::1708797153
 cartone.png::CompressedTexture2D::4857398268603422287::1708276813::1708450087::1::::<><>::
 indifferenziata.png::CompressedTexture2D::8574984721689518863::1708796757::1708796759::1::::<><>::
@@ -54,21 +57,21 @@ indifferenziataShadow.png::CompressedTexture2D::2992728526404964461::1708796889:
 plasticaShadow.png::CompressedTexture2D::1697768106469418768::1708796945::1708796952::1::::<><>::
 umidoShadow.png::CompressedTexture2D::327629457295383044::1708797065::1708797072::1::::<><>::
 vetriShadow.png::CompressedTexture2D::7422510315263552845::1708797147::1708797153::1::::<><>::
-::res://scenes/::1709226337
-mainGame.tscn::PackedScene::6382997410578227511::1709226039::0::1::::<><>::res://scripts/mainGame.gd<>uid://dq5om4ec7tyyo::::res://grafiche/scenes/corkboards.png<>uid://kwjfple8swhl::::res://grafiche/scenes/pause button.png<>uid://dpyea1ol1jf1e::::res://scenes/gameover_screen.tscn<>uid://txvuvuhwe6im::::res://grafiche/scenes/postit.png
-menu.tscn::PackedScene::4235059780533772399::1709225909::0::1::::<><>::uid://mg46lgav1yki::::res://grafiche/scenes/background.png<>res://scripts/menu.gd
-gameover_screen.tscn::PackedScene::8261884027487549780::1709225909::0::1::::<><>::uid://cc0nspsdbsk5x::::res://grafiche/scenes/gameover.png<>res://scripts/gameover_screen.gd<>uid://60lsrl5h35kv::::res://grafiche/scenes/back button.png<>uid://dbqqtqlkal0ge::::res://grafiche/scenes/restart button.png
-pause_menu.tscn::PackedScene::701203200143351459::1709226337::0::1::::<><>::uid://c70h8qtq727m4::::res://grafiche/scenes/pause.png<>res://scripts/gameover_screen.gd<>uid://60lsrl5h35kv::::res://grafiche/scenes/back button.png<>uid://dbqqtqlkal0ge::::res://grafiche/scenes/restart button.png<>uid://cyli3e75wyn6k::::res://grafiche/scenes/continue button.png
-slider.tscn::PackedScene::4510324193358859488::1709225909::0::1::::<><>::res://scripts/sliderBox.gd<>res://scripts/slider.gd<>uid://l0i8mnfquw2c::::res://grafiche/character/organico trash.png<>uid://dajdoqnm37sq8::::res://grafiche/character/plastic trash.png<>uid://bmknchdqra5ag::::res://grafiche/character/glass trash.png<>uid://dnrlgxt3h06l7::::res://grafiche/character/paper trash.png<>uid://cw66uuqv0j6ay::::res://grafiche/character/trash.png<>uid://60lsrl5h35kv::::res://grafiche/scenes/back button.png
-::res://scripts/::1709226039
-base_character.gd::GDScript::-1::1709225556::0::1::::<>Area2D<>::
+::res://scenes/::1709576193
+gameover_screen.tscn::PackedScene::8261884027487549780::1709569860::0::1::::<><>::uid://cc0nspsdbsk5x::::res://grafiche/scenes/gameover.png<>res://scripts/gameover_screen.gd<>uid://60lsrl5h35kv::::res://grafiche/scenes/back button.png<>uid://dbqqtqlkal0ge::::res://grafiche/scenes/restart button.png
+mainGame.tscn::PackedScene::6382997410578227511::1709576193::0::1::::<><>::res://scripts/mainGame.gd<>uid://dq5om4ec7tyyo::::res://grafiche/scenes/corkboards.png<>uid://kwjfple8swhl::::res://grafiche/scenes/pause button.png<>uid://dpyea1ol1jf1e::::res://scenes/gameover_screen.tscn<>uid://txvuvuhwe6im::::res://grafiche/scenes/postit.png
+menu.tscn::PackedScene::4235059780533772399::1709576193::0::1::::<><>::uid://mg46lgav1yki::::res://grafiche/scenes/background.png<>res://scripts/menu.gd<>uid://bw7sqwkkfnykg::::res://grafiche/scenes/help button.png
+pause_menu.tscn::PackedScene::701203200143351459::1709569860::0::1::::<><>::uid://c70h8qtq727m4::::res://grafiche/scenes/pause.png<>res://scripts/gameover_screen.gd<>uid://60lsrl5h35kv::::res://grafiche/scenes/back button.png<>uid://dbqqtqlkal0ge::::res://grafiche/scenes/restart button.png<>uid://cyli3e75wyn6k::::res://grafiche/scenes/continue button.png
+slider.tscn::PackedScene::4510324193358859488::1709576193::0::1::::<><>::res://scripts/sliderBox.gd<>res://scripts/slider.gd<>uid://dyy3yr4rmagj::::res://grafiche/character/organico trash static.png<>uid://dajdoqnm37sq8::::res://grafiche/character/plastic trash.png<>uid://bmknchdqra5ag::::res://grafiche/character/glass trash.png<>uid://dnrlgxt3h06l7::::res://grafiche/character/paper trash.png<>uid://cw66uuqv0j6ay::::res://grafiche/character/trash.png<>uid://60lsrl5h35kv::::res://grafiche/scenes/back button.png
+::res://scripts/::1709575641
+base_character.gd::GDScript::-1::1709227047::0::1::::<>Area2D<>::
+gameover_screen.gd::GDScript::-1::1709226403::0::1::::<>Control<>::
 glass.gd::GDScript::-1::1708273176::0::1::::<>Area2D<>::
-glass_trash.gd::GDScript::-1::1709225556::0::1::::<>Area2D<>::
-mainGame.gd::GDScript::-1::1709226039::0::1::::<>Node<>::
-menu.gd::GDScript::-1::1708618256::0::1::::<>Node<>::
-organico_trash.gd::GDScript::-1::1709225556::0::1::::<>Area2D<>::
-paper_trash.gd::GDScript::-1::1709225556::0::1::::<>Area2D<>::
-plastic_trash.gd::GDScript::-1::1709225556::0::1::::<>Area2D<>::
-gameover_screen.gd::GDScript::-1::1709225898::0::1::::<>Control<>::
+glass_trash.gd::GDScript::-1::1709227047::0::1::::<>Area2D<>::
+mainGame.gd::GDScript::-1::1709575202::0::1::::<>Node<>::
+menu.gd::GDScript::-1::1709569843::0::1::::<>Node<>::
+organico_trash.gd::GDScript::-1::1709575641::0::1::::<>Area2D<>::
+paper_trash.gd::GDScript::-1::1709227047::0::1::::<>Area2D<>::
+plastic_trash.gd::GDScript::-1::1709227047::0::1::::<>Area2D<>::
 slider.gd::GDScript::-1::1709051985::0::1::::<>Control<>::
 sliderBox.gd::GDScript::-1::1708617440::0::1::::<>ColorRect<>::

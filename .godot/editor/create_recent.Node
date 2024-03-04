@@ -1,13 +1,13 @@
-Control
+AnimationPlayer
 Button
 TextureRect
+Control
 ColorRect
 Node2D
 Label
 VisibleOnScreenNotifier2D
 Sprite2D
 TextureProgressBar
-AnimationPlayer
 CanvasLayer
 Node
 GraphEdit
