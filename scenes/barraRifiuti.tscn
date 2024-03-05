@@ -1,0 +1,49 @@
+[gd_scene load_steps=4 format=3 uid="uid://chvl12uqjojf"]
+
+[ext_resource type="Texture2D" uid="uid://c8g3mamb25pq5" path="res://grafiche/scenes/barra charge.png" id="1_dwjgq"]
+[ext_resource type="Script" path="res://scripts/barraRifiuti.gd" id="1_hbt43"]
+[ext_resource type="PackedScene" uid="uid://buskv5lu15otr" path="res://scenes/charge bar.tscn" id="2_lgesd"]
+
+[node name="barra" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hbt43")
+
+[node name="Container" type="Container" parent="."]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -60.0
+offset_top = -73.0
+offset_right = -26.0
+offset_bottom = 315.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="barra" parent="Container" instance=ExtResource("2_lgesd")]
+position = Vector2(18.5, 200.4)
+scale = Vector2(3.85, 6.62857)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -86.0
+offset_top = -98.0
+offset_bottom = 325.0
+grow_horizontal = 0
+grow_vertical = 2
+size_flags_horizontal = 0
+texture = ExtResource("1_dwjgq")

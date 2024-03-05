@@ -28,7 +28,7 @@ func _process(delta):
 			player.position.x-=200*delta
 		if right:
 			player.position.x+=200*delta
-		$trash.position.y+=100*delta
+		$trash.position.y+=150*delta
 		if $deleteBarrier/VisibleOnScreenNotifier2D.is_on_screen():
 			$deleteBarrier.position.y+=3
 			Globals.deleteLimit=$deleteBarrier.position.y
@@ -89,3 +89,10 @@ func _on_pause_menu_child_exiting_tree(_node):
 	$CanvasLayer/Control/left.visible=true
 	$CanvasLayer/Control/right.visible=true
 	Globals.pause=false
+
+
+func _on_down_value_timeout():
+	if Globals.trashValue>0:
+		Globals.trashValue-=0.05
+	else:
+		Globals.vite+=1

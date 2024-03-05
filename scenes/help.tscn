@@ -73,6 +73,7 @@ grow_horizontal = 2
 text = "COME  GIOCARE?"
 label_settings = SubResource("LabelSettings_wbcxa")
 horizontal_alignment = 1
+uppercase = true
 
 [node name="Description" type="Button" parent="Control/ColorRect"]
 layout_mode = 1
@@ -136,6 +137,7 @@ grow_horizontal = 2
 text = "BIGLIETTI  GIALLI"
 label_settings = SubResource("LabelSettings_wbcxa")
 horizontal_alignment = 1
+uppercase = true
 
 [node name="Description" type="Button" parent="Control/ColorRect2"]
 layout_mode = 1
@@ -195,10 +197,10 @@ offset_left = -255.001
 offset_right = 254.999
 offset_bottom = 75.0
 grow_horizontal = 2
-text = "BIDONE 
-DEL VETRO"
+text = "barra  rifiuti"
 label_settings = SubResource("LabelSettings_wbcxa")
 horizontal_alignment = 1
+uppercase = true
 
 [node name="Description" type="Button" parent="Control/ColorRect3"]
 layout_mode = 1
@@ -257,10 +259,10 @@ offset_left = -255.001
 offset_right = 254.999
 offset_bottom = 75.0
 grow_horizontal = 2
-text = "BIDONE
-DELLA CARTA"
+text = "obbiettivo"
 label_settings = SubResource("LabelSettings_wbcxa")
 horizontal_alignment = 1
+uppercase = true
 
 [node name="Description" type="Button" parent="Control/ColorRect4"]
 layout_mode = 1
@@ -322,10 +324,10 @@ offset_left = -255.001
 offset_right = 254.999
 offset_bottom = 75.0
 grow_horizontal = 2
-text = "BIDONE
-DELL'INDIFFERENZIATA"
+text = "spazzatura"
 label_settings = SubResource("LabelSettings_wbcxa")
 horizontal_alignment = 1
+uppercase = true
 
 [node name="Button" type="Button" parent="Control/ColorRect5"]
 layout_mode = 1

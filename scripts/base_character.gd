@@ -22,6 +22,11 @@ func _on_area_entered(area):
 		if area.is_in_group(type):
 			area.queue_free()
 			Globals.score+=1
+			if Globals.trashValue<=70:
+				Globals.trashValue+=30
+			else:
+				Globals.trashValue=100
+			
 		else:
 			Globals.vite+=1
 			area.queue_free()
