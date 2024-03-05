@@ -92,7 +92,8 @@ func _on_pause_menu_child_exiting_tree(_node):
 
 
 func _on_down_value_timeout():
-	if Globals.trashValue>0:
-		Globals.trashValue-=0.05
-	else:
-		Globals.vite+=1
+	if (!Globals.gameOver and !Globals.pause):
+		if Globals.trashValue>0:
+			Globals.trashValue-=0.05
+		else:
+			Globals.vite+=1

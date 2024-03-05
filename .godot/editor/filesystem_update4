@@ -1,20 +1,7 @@
-res://scenes/help.tscn
-res://scenes/charge bar.tscn
-res://scenes/barraRifiuti.tscn
-res://scripts/charge bar.gd
-res://scenes/menu.tscn
 res://scenes/mainGame.tscn
+res://scripts/mainGame.gd
+res://scenes/menu.tscn
 res://scenes/slider.tscn
 res://characters/player/base_character.tscn
-res://characters/player/organico_trash.tscn
-res://characters/player/paper_trash.tscn
-res://characters/player/glass_trash.tscn
-res://characters/player/plastic_trash.tscn
-res://globals/globals.gd
-res://scripts/barraRifiuti.gd
-res://scripts/mainGame.gd
-res://scripts/base_character.gd
-res://scripts/glass_trash.gd
-res://scripts/organico_trash.gd
-res://scripts/paper_trash.gd
-res://scripts/plastic_trash.gd
+res://scenes/help.tscn
+res://scenes/barraRifiuti.tscn

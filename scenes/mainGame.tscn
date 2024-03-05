@@ -36,6 +36,9 @@ offset_right = 20.0
 grow_horizontal = 2
 grow_vertical = 0
 
+[node name="barra" parent="CanvasLayer/Control" instance=ExtResource("4_pqdet")]
+layout_mode = 1
+
 [node name="pauseMenu" type="Control" parent="CanvasLayer/Control"]
 layout_mode = 1
 anchors_preset = 15
@@ -68,9 +71,6 @@ offset_left = 0.0720215
 offset_right = -0.1521
 offset_bottom = 0.207993
 texture = ExtResource("2_o1nq7")
-
-[node name="barra" parent="CanvasLayer/Control" instance=ExtResource("4_pqdet")]
-layout_mode = 1
 
 [node name="left" type="Button" parent="CanvasLayer/Control"]
 modulate = Color(1, 1, 1, 0)
