@@ -8,23 +8,6 @@
 radius = 9.0
 height = 34.0
 
-[sub_resource type="Animation" id="Animation_pka5t"]
-resource_name = "walkRight"
-length = 0.6
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [0, 1, 2, 3, 4, 5]
-}
-
 [sub_resource type="Animation" id="Animation_crtaj"]
 length = 0.001
 tracks/0/type = "value"
@@ -57,6 +40,23 @@ tracks/0/keys = {
 "values": [10, 11, 12, 13, 14, 15]
 }
 
+[sub_resource type="Animation" id="Animation_pka5t"]
+resource_name = "walkRight"
+length = 0.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_6p0i6"]
 _data = {
 "RESET": SubResource("Animation_crtaj"),
@@ -67,15 +67,12 @@ _data = {
 [node name="organico trash" instance=ExtResource("1_lx6g8")]
 script = ExtResource("2_t50ug")
 
-[node name="Sprite2D" parent="." index="0"]
-texture = ExtResource("3_lto1p")
-hframes = 10
-vframes = 10
-frame = 20
-
-[node name="CollisionShape2D" parent="." index="1"]
+[node name="CollisionShape2D" parent="." index="0"]
 position = Vector2(-2, -16)
 shape = SubResource("CapsuleShape2D_b0xj6")
+
+[node name="Sprite2D" parent="." index="1"]
+texture = ExtResource("3_lto1p")
 
 [node name="AnimationPlayer2" type="AnimationPlayer" parent="." index="2"]
 libraries = {

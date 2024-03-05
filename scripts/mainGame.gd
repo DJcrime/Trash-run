@@ -85,7 +85,7 @@ func _on_pause_pressed():
 	$CanvasLayer/Control/pauseMenu.add_child(pause)
 
 
-func _on_pause_menu_child_exiting_tree(node):
+func _on_pause_menu_child_exiting_tree(_node):
 	$CanvasLayer/Control/left.visible=true
 	$CanvasLayer/Control/right.visible=true
 	Globals.pause=false

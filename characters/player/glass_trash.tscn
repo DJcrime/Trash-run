@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://sx5wc835xoa0" path="res://characters/player/base_character.tscn" id="1_2f784"]
 [ext_resource type="Script" path="res://scripts/glass_trash.gd" id="2_x3gsn"]
-[ext_resource type="Texture2D" uid="uid://bi3hfqvtcond4" path="res://grafiche/character/glass trash.png" id="3_r83xa"]
+[ext_resource type="Texture2D" uid="uid://cegq25180shjr" path="res://grafiche/character/glass trash moves.png" id="3_c3qo8"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_76wxj"]
 height = 37.61
@@ -16,4 +16,4 @@ shape = SubResource("CapsuleShape2D_76wxj")
 
 [node name="Sprite2D" parent="." index="1"]
 position = Vector2(6, -17)
-texture = ExtResource("3_r83xa")
+texture = ExtResource("3_c3qo8")

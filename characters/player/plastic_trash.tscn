@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://sx5wc835xoa0" path="res://characters/player/base_character.tscn" id="1_pink1"]
 [ext_resource type="Script" path="res://scripts/plastic_trash.gd" id="2_0o4js"]
-[ext_resource type="Texture2D" uid="uid://ctr5ights0pjp" path="res://grafiche/character/plastic trash.png" id="3_phsrd"]
+[ext_resource type="Texture2D" uid="uid://3ek0c5pab4dx" path="res://grafiche/character/plastic trash moves.png" id="3_wa5b5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fuxg3"]
 size = Vector2(35, 31)
@@ -16,4 +16,4 @@ shape = SubResource("RectangleShape2D_fuxg3")
 
 [node name="Sprite2D" parent="." index="1"]
 position = Vector2(0, -18.805)
-texture = ExtResource("3_phsrd")
+texture = ExtResource("3_wa5b5")
