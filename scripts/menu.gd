@@ -3,6 +3,7 @@ extends Node
 #scene
 const MAIN_GAME = "res://scenes/mainGame.tscn"
 const SLIDER = "res://scenes/slider.tscn"
+const HELP = "res://scenes/help.tscn"
 
 func _on_play_pressed():
 	get_tree().change_scene_to_file(MAIN_GAME)
@@ -13,4 +14,4 @@ func _on_change_character_pressed():
 
 
 func _on_help_pressed():
-	pass # Replace with function body.
+	get_tree().change_scene_to_file(HELP)

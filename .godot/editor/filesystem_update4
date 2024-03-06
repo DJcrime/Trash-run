@@ -1,7 +1,9 @@
-res://scenes/mainGame.tscn
+res://scenes/help.tscn
 res://scripts/mainGame.gd
 res://scenes/menu.tscn
+res://scenes/mainGame.tscn
 res://scenes/slider.tscn
 res://characters/player/base_character.tscn
-res://scenes/help.tscn
 res://scenes/barraRifiuti.tscn
+res://scripts/help.gd
+res://scripts/menu.gd

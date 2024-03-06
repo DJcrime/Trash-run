@@ -63,3 +63,4 @@ offset_bottom = 73.0
 
 [connection signal="pressed" from="CanvasLayer/play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="CanvasLayer/changeCharacter" to="." method="_on_change_character_pressed"]
+[connection signal="pressed" from="CanvasLayer/help" to="." method="_on_help_pressed"]
