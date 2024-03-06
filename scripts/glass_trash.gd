@@ -3,6 +3,7 @@ extends Area2D
 var type:String="glass"
 
 func _ready():
+	$Sprite2D.frame=20
 	Globals.connect("checkAnim",checkAnim)
 
 func checkAnim():

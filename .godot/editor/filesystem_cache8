@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1709739665
+::res://::1709742256
 icon.svg::CompressedTexture2D::1168730199758383366::1708031057::1708964566::1::::<><>::
 ::res://addons/::1708272191
 ::res://addons/debug_menu/::1708272191
@@ -25,7 +25,7 @@ effetti.txt::TextFile::-1::1708447186::0::1::::<><>::
 ::res://globals/::1709660390
 globals.gd::GDScript::-1::1709660390::0::1::::<>Node<>::
 ::res://grafiche/::1709712457
-::res://grafiche/character/::1709741518
+::res://grafiche/character/::1709741653
 glass trash moves.png::CompressedTexture2D::5067004314181298335::1709740762::1709740763::1::::<><>::
 glass trash.png::CompressedTexture2D::3250123850431444686::1708452338::1708616330::1::::<><>::
 organico trash moves.png::CompressedTexture2D::3534481463571675803::1709575398::1709575589::1::::<><>::

@@ -1,11 +1,11 @@
-res://characters/player/glass_trash.tscn
+res://characters/player/paper_trash.tscn
 res://scripts/mainGame.gd
+res://scripts/paper_trash.gd
+res://characters/player/glass_trash.tscn
+res://scripts/glass_trash.gd
 res://scenes/menu.tscn
 res://scenes/mainGame.tscn
 res://scenes/slider.tscn
 res://characters/player/base_character.tscn
 res://scenes/help.tscn
 res://scenes/barraRifiuti.tscn
-res://scripts/glass_trash.gd
-res://characters/player/paper_trash.tscn
-res://scripts/paper_trash.gd
