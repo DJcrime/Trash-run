@@ -2,6 +2,20 @@ extends Area2D
 
 var type:String="glass"
 
+func _ready():
+	Globals.connect("checkAnim",checkAnim)
+
+func checkAnim():
+	if !Globals.gameOver and !Globals.pause:
+		if Globals.anim==0:
+			$AnimationPlayer.stop()
+			$AnimationPlayer.play("RESET")
+		if Globals.anim==1:
+			$AnimationPlayer.stop()
+			$AnimationPlayer.play("walkRight")
+		if Globals.anim==2:
+			$AnimationPlayer.stop()
+			$AnimationPlayer.play("walkLeft")
 
 func _on_area_entered(area):
 	if (!Globals.gameOver&&!Globals.pause):

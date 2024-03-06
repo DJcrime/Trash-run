@@ -1,14 +1,14 @@
+AnimationPlayer
+AnimationTree
 TextureRect
 ColorRect
 Node
 Timer
 Container
 GPUParticles2D
-AnimationPlayer
 Sprite2D
 Button
 Control
 Node2D
 Label
 VisibleOnScreenNotifier2D
-TextureProgressBar

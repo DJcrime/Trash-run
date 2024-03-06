@@ -1,19 +1,86 @@
-[gd_scene load_steps=5 format=3 uid="uid://txu3eg1iu6w0"]
+[gd_scene load_steps=8 format=3 uid="uid://txu3eg1iu6w0"]
 
-[ext_resource type="PackedScene" uid="uid://sx5wc835xoa0" path="res://characters/player/base_character.tscn" id="1_2f784"]
 [ext_resource type="Script" path="res://scripts/glass_trash.gd" id="2_x3gsn"]
 [ext_resource type="Texture2D" uid="uid://cegq25180shjr" path="res://grafiche/character/glass trash moves.png" id="3_c3qo8"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_76wxj"]
-height = 37.61
+height = 38.0
 
-[node name="glass trash" instance=ExtResource("1_2f784")]
+[sub_resource type="Animation" id="Animation_fjsch"]
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [24, 23, 22, 21, 20]
+}
+
+[sub_resource type="Animation" id="Animation_whphb"]
+resource_name = "walkLeft"
+length = 0.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [10, 11, 12, 13, 14, 15]
+}
+
+[sub_resource type="Animation" id="Animation_v2aly"]
+resource_name = "walkRight"
+length = 0.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_52yd2"]
+_data = {
+"RESET": SubResource("Animation_fjsch"),
+"walkLeft": SubResource("Animation_whphb"),
+"walkRight": SubResource("Animation_v2aly")
+}
+
+[node name="glass trash" type="Area2D"]
+collision_mask = 6
 script = ExtResource("2_x3gsn")
 
-[node name="CollisionShape2D" parent="." index="0"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -17)
 shape = SubResource("CapsuleShape2D_76wxj")
 
-[node name="Sprite2D" parent="." index="1"]
+[node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(6, -17)
 texture = ExtResource("3_c3qo8")
+offset = Vector2(1.5, -2.195)
+hframes = 10
+vframes = 10
+frame = 24
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_52yd2")
+}
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

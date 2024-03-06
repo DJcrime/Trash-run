@@ -1,6 +1,5 @@
-[gd_scene load_steps=5 format=3 uid="uid://c5fvg8pavopii"]
+[gd_scene load_steps=8 format=3 uid="uid://c5fvg8pavopii"]
 
-[ext_resource type="PackedScene" uid="uid://sx5wc835xoa0" path="res://characters/player/base_character.tscn" id="1_nfmvo"]
 [ext_resource type="Script" path="res://scripts/paper_trash.gd" id="2_aa4aa"]
 [ext_resource type="Texture2D" uid="uid://ch8knyh1oaqef" path="res://grafiche/character/paper trash moves.png" id="3_vm1q1"]
 
@@ -8,14 +7,82 @@
 radius = 8.0
 height = 38.0
 
-[node name="paper trash" instance=ExtResource("1_nfmvo")]
+[sub_resource type="Animation" id="Animation_onpjh"]
+resource_name = "walkRight"
+length = 0.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5]
+}
+
+[sub_resource type="Animation" id="Animation_veeti"]
+length = 0.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.001, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [24, 24, 23, 22, 21, 20]
+}
+
+[sub_resource type="Animation" id="Animation_lgqlu"]
+resource_name = "walkLeft"
+length = 0.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [10, 11, 12, 13, 14, 15]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_38lpa"]
+_data = {
+"RESET": SubResource("Animation_veeti"),
+"walkLeft": SubResource("Animation_lgqlu"),
+"walkRight": SubResource("Animation_onpjh")
+}
+
+[node name="paper trash" type="Area2D"]
+collision_mask = 6
 script = ExtResource("2_aa4aa")
 
-[node name="CollisionShape2D" parent="." index="0"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -18)
 shape = SubResource("CapsuleShape2D_teyla")
 
-[node name="Sprite2D" parent="." index="1"]
+[node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(3, -23)
 texture = ExtResource("3_vm1q1")
+offset = Vector2(1.5, -2.195)
+hframes = 10
+vframes = 10
+frame = 24
 region_rect = Rect2(0, 15.2357, 56.2173, 54.7643)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_38lpa")
+}
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
