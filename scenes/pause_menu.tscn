@@ -42,9 +42,9 @@ anchor_top = 0.315
 anchor_right = 0.665
 anchor_bottom = 0.426
 offset_left = 0.104996
-offset_top = 0.094986
+offset_top = 198.155
 offset_right = -0.105011
-offset_bottom = -0.0620117
+offset_bottom = 197.998
 texture = ExtResource("2_d43cp")
 
 [node name="restartbutton" type="TextureRect" parent="."]
@@ -63,9 +63,9 @@ texture = ExtResource("3_ffk6c")
 [node name="continue button" type="TextureRect" parent="."]
 layout_mode = 0
 offset_left = 180.0
-offset_top = 382.0
+offset_top = 186.0
 offset_right = 357.0
-offset_bottom = 448.0
+offset_bottom = 252.0
 texture = ExtResource("5_scmpu")
 
 [node name="back" type="Button" parent="."]
@@ -73,13 +73,13 @@ modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.335
-anchor_top = 0.315
+anchor_top = 0.653
 anchor_right = 0.667
-anchor_bottom = 0.424
+anchor_bottom = 0.762
 offset_left = 0.104996
-offset_top = 0.094986
+offset_top = -0.280487
 offset_right = -0.179016
-offset_bottom = 0.111984
+offset_bottom = -0.263489
 grow_horizontal = 2
 grow_vertical = 2
 icon_alignment = 1
@@ -105,13 +105,13 @@ modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.335
-anchor_top = 0.651
+anchor_top = 0.317
 anchor_right = 0.665
-anchor_bottom = 0.763
+anchor_bottom = 0.429
 offset_left = 0.16127
-offset_top = -0.194305
+offset_top = -0.106903
 offset_right = 0.00668335
-offset_bottom = 0.0518494
+offset_bottom = 0.139236
 
 [connection signal="pressed" from="back" to="." method="_on_back_pressed"]
 [connection signal="pressed" from="restart" to="." method="_on_restart_pressed"]

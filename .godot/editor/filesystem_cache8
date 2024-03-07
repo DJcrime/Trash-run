@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1709742256
+::res://::1709821981
 icon.svg::CompressedTexture2D::1168730199758383366::1708031057::1708964566::1::::<><>::
 ::res://addons/::1708272191
 ::res://addons/debug_menu/::1708272191
@@ -14,11 +14,11 @@ glass.tscn::PackedScene::5061338461740518581::1709043384::0::1::::<><>::res://sc
 indifferenziata.tscn::PackedScene::1677114205540491364::1709043384::0::1::::<><>::uid://duf10l3585cf4::::res://grafiche/trashes/indifferenziata.png<>uid://bivx2ivtjhqrd::::res://grafiche/trashes/Shadows/indifferenziataShadow.png
 plastic.tscn::PackedScene::1505568606635961460::1709043384::0::1::::<><>::uid://ygn80r1asad1::::res://grafiche/trashes/Shadows/plasticaShadow.png<>uid://dyr2w6457ec0u::::res://grafiche/trashes/plastica.png
 umido.tscn::PackedScene::5264803732809789521::1709043384::0::1::::<><>::uid://ewyak0kowdku::::res://grafiche/trashes/Shadows/umidoShadow.png<>uid://df3mmdbtn3q4u::::res://grafiche/trashes/umido.png
-::res://characters/player/::1709741635
-base_character.tscn::PackedScene::1312740828415307561::1709741561::0::1::::<><>::res://scripts/base_character.gd<>uid://bd2u5wn0pr3r1::::res://grafiche/character/trash moves.png
-glass_trash.tscn::PackedScene::1382333280105717985::1709741561::0::1::::<><>::res://scripts/glass_trash.gd<>uid://cegq25180shjr::::res://grafiche/character/glass trash moves.png
+::res://characters/player/::1709742509
+base_character.tscn::PackedScene::1312740828415307561::1709742333::0::1::::<><>::res://scripts/base_character.gd<>uid://bd2u5wn0pr3r1::::res://grafiche/character/trash moves.png
+glass_trash.tscn::PackedScene::1382333280105717985::1709742399::0::1::::<><>::res://scripts/glass_trash.gd<>uid://cegq25180shjr::::res://grafiche/character/glass trash moves.png
 organico_trash.tscn::PackedScene::1513199396633580975::1709658956::0::1::::<><>::uid://sx5wc835xoa0::::res://characters/player/base_character.tscn<>res://scripts/organico_trash.gd<>uid://bqmenmwxn6ev0::::res://grafiche/character/organico trash moves.png
-paper_trash.tscn::PackedScene::6890116093380249556::1709741635::0::1::::<><>::res://scripts/paper_trash.gd<>uid://ch8knyh1oaqef::::res://grafiche/character/paper trash moves.png
+paper_trash.tscn::PackedScene::6890116093380249556::1709742509::0::1::::<><>::res://scripts/paper_trash.gd<>uid://ch8knyh1oaqef::::res://grafiche/character/paper trash moves.png
 plastic_trash.tscn::PackedScene::5813739947108055930::1709658956::0::1::::<><>::uid://sx5wc835xoa0::::res://characters/player/base_character.tscn<>res://scripts/plastic_trash.gd<>uid://3ek0c5pab4dx::::res://grafiche/character/plastic trash moves.png
 ::res://effects/::1708447186
 effetti.txt::TextFile::-1::1708447186::0::1::::<><>::
@@ -32,7 +32,7 @@ organico trash moves.png::CompressedTexture2D::3534481463571675803::1709575398::
 organico trash static.png::CompressedTexture2D::261620095230159397::1709571565::1709572836::1::::<><>::
 paper trash moves.png::CompressedTexture2D::5332919396558912429::1709741639::1709741653::1::::<><>::
 paper trash.png::CompressedTexture2D::8107491280547503114::1708452337::1708616335::1::::<><>::
-plastic trash moves.png::CompressedTexture2D::1974197099728869977::1709740177::1709740712::1::::<><>::
+plastic trash moves.png::CompressedTexture2D::1974197099728869977::1709821975::1709821981::1::::<><>::
 plastic trash.png::CompressedTexture2D::7178049463998790409::1708452338::1708616338::1::::<><>::
 trash moves.png::CompressedTexture2D::2653994504392080676::1709648748::1709648749::1::::<><>::
 trash.png::CompressedTexture2D::6382910656624441356::1708617899::1708617900::1::::<><>::
@@ -70,27 +70,27 @@ indifferenziataShadow.png::CompressedTexture2D::2992728526404964461::1708796889:
 plasticaShadow.png::CompressedTexture2D::1697768106469418768::1708796945::1708796952::1::::<><>::
 umidoShadow.png::CompressedTexture2D::327629457295383044::1708797065::1708797072::1::::<><>::
 vetriShadow.png::CompressedTexture2D::7422510315263552845::1708797147::1708797153::1::::<><>::
-::res://scenes/::1709741561
-barraRifiuti.tscn::PackedScene::156124440382815863::1709741561::0::1::::<><>::uid://c8g3mamb25pq5::::res://grafiche/scenes/barra charge.png<>res://scripts/barraRifiuti.gd<>uid://buskv5lu15otr::::res://scenes/charge bar.tscn
+::res://scenes/::1709742333
+barraRifiuti.tscn::PackedScene::156124440382815863::1709742333::0::1::::<><>::uid://c8g3mamb25pq5::::res://grafiche/scenes/barra charge.png<>res://scripts/barraRifiuti.gd<>uid://buskv5lu15otr::::res://scenes/charge bar.tscn
 charge bar.tscn::PackedScene::3828002621264494239::1709658956::0::1::::<><>::uid://dhv7wmvhb65ly::::res://grafiche/scenes/carica barra.png<>uid://pox70kiwn8be::::res://grafiche/scenes/effectpuzzo.png<>res://scripts/charge bar.gd
 gameover_screen.tscn::PackedScene::8261884027487549780::1709569860::0::1::::<><>::uid://cc0nspsdbsk5x::::res://grafiche/scenes/gameover.png<>res://scripts/gameover_screen.gd<>uid://60lsrl5h35kv::::res://grafiche/scenes/back button.png<>uid://dbqqtqlkal0ge::::res://grafiche/scenes/restart button.png
-help.tscn::PackedScene::8376860300977882925::1709741561::0::1::::<><>::res://scripts/sliderBox.gd<>res://scripts/help.gd<>uid://dyy3yr4rmagj::::res://grafiche/character/organico trash static.png<>uid://dajdoqnm37sq8::::res://grafiche/character/plastic trash.png<>uid://56ysh1s16mn4::::res://grafiche/screenshot/Screenshot 2024-03-06 091412.png<>uid://bmknchdqra5ag::::res://grafiche/character/glass trash.png<>uid://c4tfe53rgg8kx::::res://grafiche/screenshot/Screenshot 2024-03-06 091607.png<>uid://dnrlgxt3h06l7::::res://grafiche/character/paper trash.png<>uid://cawojcdrr6pk7::::res://grafiche/screenshot/Screenshot 2024-03-06 091659.png<>uid://cw66uuqv0j6ay::::res://grafiche/character/trash.png<>uid://cbg7v0vb8dau6::::res://grafiche/trashes/cartone.png<>uid://c38dsvu4vpkg8::::res://grafiche/screenshot/Screenshot 2024-03-06 090703.png<>uid://60lsrl5h35kv::::res://grafiche/scenes/back button.png<>uid://duf10l3585cf4::::res://grafiche/trashes/indifferenziata.png<>uid://c6q8aq3pytop6::::res://grafiche/scenes/cornice.png<>uid://dyr2w6457ec0u::::res://grafiche/trashes/plastica.png<>uid://df3mmdbtn3q4u::::res://grafiche/trashes/umido.png<>uid://dirf6ak2sn3qw::::res://grafiche/trashes/vetri.png<>uid://dykpsgxmcsprs::::res://grafiche/scenes/freccia.png
-mainGame.tscn::PackedScene::6382997410578227511::1709741561::0::1::::<><>::res://scripts/mainGame.gd<>uid://dq5om4ec7tyyo::::res://grafiche/scenes/corkboards.png<>uid://kwjfple8swhl::::res://grafiche/scenes/pause button.png<>uid://dpyea1ol1jf1e::::res://scenes/gameover_screen.tscn<>uid://txvuvuhwe6im::::res://grafiche/scenes/postit.png<>uid://chvl12uqjojf::::res://scenes/barraRifiuti.tscn
-menu.tscn::PackedScene::4235059780533772399::1709741561::0::1::::<><>::uid://mg46lgav1yki::::res://grafiche/scenes/background.png<>res://scripts/menu.gd<>uid://bw7sqwkkfnykg::::res://grafiche/scenes/help button.png
+help.tscn::PackedScene::8376860300977882925::1709742333::0::1::::<><>::res://scripts/sliderBox.gd<>res://scripts/help.gd<>uid://dyy3yr4rmagj::::res://grafiche/character/organico trash static.png<>uid://dajdoqnm37sq8::::res://grafiche/character/plastic trash.png<>uid://56ysh1s16mn4::::res://grafiche/screenshot/Screenshot 2024-03-06 091412.png<>uid://bmknchdqra5ag::::res://grafiche/character/glass trash.png<>uid://c4tfe53rgg8kx::::res://grafiche/screenshot/Screenshot 2024-03-06 091607.png<>uid://dnrlgxt3h06l7::::res://grafiche/character/paper trash.png<>uid://cawojcdrr6pk7::::res://grafiche/screenshot/Screenshot 2024-03-06 091659.png<>uid://cw66uuqv0j6ay::::res://grafiche/character/trash.png<>uid://cbg7v0vb8dau6::::res://grafiche/trashes/cartone.png<>uid://c38dsvu4vpkg8::::res://grafiche/screenshot/Screenshot 2024-03-06 090703.png<>uid://60lsrl5h35kv::::res://grafiche/scenes/back button.png<>uid://duf10l3585cf4::::res://grafiche/trashes/indifferenziata.png<>uid://c6q8aq3pytop6::::res://grafiche/scenes/cornice.png<>uid://dyr2w6457ec0u::::res://grafiche/trashes/plastica.png<>uid://df3mmdbtn3q4u::::res://grafiche/trashes/umido.png<>uid://dirf6ak2sn3qw::::res://grafiche/trashes/vetri.png<>uid://dykpsgxmcsprs::::res://grafiche/scenes/freccia.png
+mainGame.tscn::PackedScene::6382997410578227511::1709742333::0::1::::<><>::res://scripts/mainGame.gd<>uid://dq5om4ec7tyyo::::res://grafiche/scenes/corkboards.png<>uid://kwjfple8swhl::::res://grafiche/scenes/pause button.png<>uid://dpyea1ol1jf1e::::res://scenes/gameover_screen.tscn<>uid://txvuvuhwe6im::::res://grafiche/scenes/postit.png<>uid://chvl12uqjojf::::res://scenes/barraRifiuti.tscn
+menu.tscn::PackedScene::4235059780533772399::1709742333::0::1::::<><>::uid://mg46lgav1yki::::res://grafiche/scenes/background.png<>res://scripts/menu.gd<>uid://bw7sqwkkfnykg::::res://grafiche/scenes/help button.png
 pause_menu.tscn::PackedScene::701203200143351459::1709569860::0::1::::<><>::uid://c70h8qtq727m4::::res://grafiche/scenes/pause.png<>res://scripts/gameover_screen.gd<>uid://60lsrl5h35kv::::res://grafiche/scenes/back button.png<>uid://dbqqtqlkal0ge::::res://grafiche/scenes/restart button.png<>uid://cyli3e75wyn6k::::res://grafiche/scenes/continue button.png
-slider.tscn::PackedScene::4510324193358859488::1709741561::0::1::::<><>::res://scripts/sliderBox.gd<>res://scripts/slider.gd<>uid://dyy3yr4rmagj::::res://grafiche/character/organico trash static.png<>uid://dajdoqnm37sq8::::res://grafiche/character/plastic trash.png<>uid://bmknchdqra5ag::::res://grafiche/character/glass trash.png<>uid://dnrlgxt3h06l7::::res://grafiche/character/paper trash.png<>uid://cw66uuqv0j6ay::::res://grafiche/character/trash.png<>uid://60lsrl5h35kv::::res://grafiche/scenes/back button.png
-::res://scripts/::1709740949
+slider.tscn::PackedScene::4510324193358859488::1709742333::0::1::::<><>::res://scripts/sliderBox.gd<>res://scripts/slider.gd<>uid://dyy3yr4rmagj::::res://grafiche/character/organico trash static.png<>uid://dajdoqnm37sq8::::res://grafiche/character/plastic trash.png<>uid://bmknchdqra5ag::::res://grafiche/character/glass trash.png<>uid://dnrlgxt3h06l7::::res://grafiche/character/paper trash.png<>uid://cw66uuqv0j6ay::::res://grafiche/character/trash.png<>uid://60lsrl5h35kv::::res://grafiche/scenes/back button.png
+::res://scripts/::1709742297
 barraRifiuti.gd::GDScript::-1::1709660474::0::1::::<>Control<>::
 base_character.gd::GDScript::-1::1709660711::0::1::::<>Area2D<>::
 charge bar.gd::GDScript::-1::1709658947::0::1::::<>Sprite2D<>::
 gameover_screen.gd::GDScript::-1::1709226403::0::1::::<>Control<>::
 glass.gd::GDScript::-1::1708273176::0::1::::<>Area2D<>::
-glass_trash.gd::GDScript::-1::1709738838::0::1::::<>Area2D<>::
+glass_trash.gd::GDScript::-1::1709742297::0::1::::<>Area2D<>::
 help.gd::GDScript::-1::1709712819::0::1::::<>Control<>::
-mainGame.gd::GDScript::-1::1709738779::0::1::::<>Node<>::
+mainGame.gd::GDScript::-1::1709742291::0::1::::<>Node<>::
 menu.gd::GDScript::-1::1709715596::0::1::::<>Node<>::
 organico_trash.gd::GDScript::-1::1709660738::0::1::::<>Area2D<>::
-paper_trash.gd::GDScript::-1::1709740949::0::1::::<>Area2D<>::
+paper_trash.gd::GDScript::-1::1709742291::0::1::::<>Area2D<>::
 plastic_trash.gd::GDScript::-1::1709660739::0::1::::<>Area2D<>::
 slider.gd::GDScript::-1::1709051985::0::1::::<>Control<>::
 sliderBox.gd::GDScript::-1::1708617440::0::1::::<>ColorRect<>::
