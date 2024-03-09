@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://b1lq20duh6ykt"]
+[gd_scene load_steps=5 format=3 uid="uid://b1lq20duh6ykt"]
 
 [ext_resource type="Texture2D" uid="uid://mg46lgav1yki" path="res://grafiche/scenes/background.png" id="1_hya78"]
 [ext_resource type="Script" path="res://scripts/menu.gd" id="1_wbgtb"]
 [ext_resource type="Texture2D" uid="uid://bw7sqwkkfnykg" path="res://grafiche/scenes/help button.png" id="3_f8j8x"]
+[ext_resource type="AudioStream" uid="uid://bm4g1g4cjd2ws" path="res://music/menu.wav" id="4_6y4yu"]
 
 [node name="menu" type="Node"]
 script = ExtResource("1_wbgtb")
@@ -18,9 +19,13 @@ grow_vertical = 2
 texture = ExtResource("1_hya78")
 
 [node name="TextureRect2" type="TextureRect" parent="CanvasLayer"]
-offset_left = 1072.0
-offset_right = 1152.0
-offset_bottom = 80.0
+anchors_preset = -1
+anchor_left = 0.931
+anchor_right = 1.0
+anchor_bottom = 0.123
+offset_left = -0.512085
+offset_bottom = 0.295998
+grow_horizontal = 0
 texture = ExtResource("3_f8j8x")
 expand_mode = 1
 
@@ -56,10 +61,17 @@ flat = true
 
 [node name="help" type="Button" parent="CanvasLayer"]
 modulate = Color(1, 1, 1, 0)
-offset_left = 1082.0
-offset_top = 9.0
-offset_right = 1146.0
-offset_bottom = 73.0
+anchors_preset = -1
+anchor_left = 0.937
+anchor_right = 1.0
+anchor_bottom = 0.117
+offset_left = 0.575928
+offset_bottom = 0.183998
+grow_horizontal = 0
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_6y4yu")
+autoplay = true
 
 [connection signal="pressed" from="CanvasLayer/play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="CanvasLayer/changeCharacter" to="." method="_on_change_character_pressed"]

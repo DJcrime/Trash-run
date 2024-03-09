@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://txu3eg1iu6w0"]
+[gd_scene load_steps=9 format=3 uid="uid://txu3eg1iu6w0"]
 
 [ext_resource type="Script" path="res://scripts/glass_trash.gd" id="2_x3gsn"]
 [ext_resource type="Texture2D" uid="uid://cegq25180shjr" path="res://grafiche/character/glass trash moves.png" id="3_c3qo8"]
+[ext_resource type="AudioStream" uid="uid://cdrvysnrs75kr" path="res://music/point.wav" id="3_gmhrf"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_76wxj"]
 height = 38.0
@@ -82,5 +83,8 @@ frame = 24
 libraries = {
 "": SubResource("AnimationLibrary_52yd2")
 }
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_gmhrf")
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]

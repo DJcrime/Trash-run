@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://cw68bghf7paod"]
+[gd_scene load_steps=9 format=3 uid="uid://cw68bghf7paod"]
 
 [ext_resource type="Script" path="res://scripts/mainGame.gd" id="1_fxxsq"]
 [ext_resource type="Texture2D" uid="uid://dq5om4ec7tyyo" path="res://grafiche/scenes/corkboards.png" id="2_csg46"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://dpyea1ol1jf1e" path="res://scenes/gameover_screen.tscn" id="3_842o6"]
 [ext_resource type="Texture2D" uid="uid://txvuvuhwe6im" path="res://grafiche/scenes/postit.png" id="3_tait6"]
 [ext_resource type="PackedScene" uid="uid://chvl12uqjojf" path="res://scenes/barraRifiuti.tscn" id="4_pqdet"]
+[ext_resource type="AudioStream" uid="uid://dvci3e0ltw5wi" path="res://music/musicGod.mp3" id="7_2nxf0"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_062q6"]
 font_size = 61
@@ -179,6 +180,11 @@ texture = ExtResource("3_tait6")
 position = Vector2(208, 101)
 scale = Vector2(2.57143, 2.41429)
 texture = ExtResource("3_tait6")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_2nxf0")
+volume_db = -12.876
+autoplay = true
 
 [connection signal="child_exiting_tree" from="CanvasLayer/Control/pauseMenu" to="." method="_on_pause_menu_child_exiting_tree"]
 [connection signal="button_down" from="CanvasLayer/Control/left" to="." method="_on_left_button_down"]

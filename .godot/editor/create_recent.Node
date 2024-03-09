@@ -1,3 +1,4 @@
+AudioStreamPlayer2D
 AnimationPlayer
 AnimationTree
 TextureRect
@@ -11,4 +12,3 @@ Button
 Control
 Node2D
 Label
-VisibleOnScreenNotifier2D

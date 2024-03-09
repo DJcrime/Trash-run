@@ -102,11 +102,10 @@ position = Vector2(580, 287)
 
 [node name="ColorRect2" type="ColorRect" parent="Control"]
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
+anchors_preset = -1
+anchor_left = 1.0
+anchor_right = 2.0
 anchor_bottom = 1.0
-offset_left = 1152.0
-offset_right = 1152.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(1, 1, 0.231373, 1)
@@ -165,11 +164,9 @@ position = Vector2(605, 297)
 
 [node name="ColorRect3" type="ColorRect" parent="Control"]
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
+anchors_preset = -1
+anchor_left = -1.0
 anchor_bottom = 1.0
-offset_left = -1152.0
-offset_right = -1152.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 1, 0, 1)
@@ -227,11 +224,10 @@ position = Vector2(595, 297)
 
 [node name="ColorRect4" type="ColorRect" parent="Control"]
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
+anchors_preset = -1
+anchor_left = -2.0
+anchor_right = -1.0
 anchor_bottom = 1.0
-offset_left = -2304.0
-offset_right = -2304.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 1, 1)
@@ -291,12 +287,12 @@ position = Vector2(600, 262)
 
 [node name="ColorRect5" type="ColorRect" parent="Control"]
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
+anchors_preset = -1
+anchor_left = 2.0
+anchor_right = 3.0
 anchor_bottom = 1.0
-offset_left = 2304.0
-offset_right = 2304.0
-grow_horizontal = 2
+offset_right = -0.000244141
+grow_horizontal = 0
 grow_vertical = 2
 color = Color(0.568627, 0.568627, 0.568627, 1)
 script = ExtResource("1_q2gyo")

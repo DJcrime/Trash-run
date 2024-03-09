@@ -1,5 +1,6 @@
 extends Node
 
+var dead = load("res://music/gameOver.wav")
 #Array scene spazzatura
 var trashes:Array=Array(["res://characters/glass.tscn",
 						"res://characters/carton.tscn",
@@ -39,6 +40,8 @@ func checkVita():
 			var postits=$corkboardPostit.get_children()
 			postits[Globals.vite].texture=preload("res://grafiche/scenes/postitcompleted.png")
 		if Globals.vite==3:
+			$AudioStreamPlayer2D.stream=dead
+			$AudioStreamPlayer2D.playing=true
 			Globals.gameOver=true
 			$"CanvasLayer/Control/gameover screen".visible=true
 			

@@ -1,0 +1,19 @@
+res://addons/debug_menu/debug_menu.tscn::7afe0a8b7a4b3d541faa2ed0b39f6c9a::1708272191::res://.godot/exported/133200997/export-cf14e99bcd5cad797259b72ffd500df4-debug_menu.scn
+res://characters/player/base_character.tscn::08be87bded93938839820b55a7f6a54d::1710014537::res://.godot/exported/133200997/export-18737fcc8433c179c1284c040267d4df-base_character.scn
+res://characters/player/glass_trash.tscn::5bb44a4947e286d1546660fe814ffd7e::1710014537::res://.godot/exported/133200997/export-73e2447d7d7463979b7bbe7521b7a7f5-glass_trash.scn
+res://characters/player/organico_trash.tscn::5dc9a3b60dbe0d0d753c330972fee60e::1710014537::res://.godot/exported/133200997/export-03a98cc121a0283387c59e3c23441d18-organico_trash.scn
+res://characters/player/paper_trash.tscn::97c364ad91c1cc3f403019980d4a52d0::1710014537::res://.godot/exported/133200997/export-9bf039de9f1b7f4b45bbfea671b1cc11-paper_trash.scn
+res://characters/player/plastic_trash.tscn::c46f0af40431b5734d33f370d9349a71::1710014537::res://.godot/exported/133200997/export-ee4b99e83a52c7957f0dad774ec66848-plastic_trash.scn
+res://characters/carton.tscn::151f0de4966b5d2045b17969afd9fd2f::1709043384::res://.godot/exported/133200997/export-2abaae773a312826ded48c0cd7331daf-carton.scn
+res://characters/glass.tscn::2ce301e4ad4d419e798e9ac7e073ada9::1709043384::res://.godot/exported/133200997/export-10dd4675194f7ff8bfddc7b4573d6d19-glass.scn
+res://characters/indifferenziata.tscn::9f4a9e1c8d49f2d5b361648fc8e23f03::1709043384::res://.godot/exported/133200997/export-6cae2ea3febcf14bf31765c5d8b5976a-indifferenziata.scn
+res://characters/plastic.tscn::c2a7f74359a5b6bb544712bb484594db::1709043384::res://.godot/exported/133200997/export-94b6f0be64826d1c85d6abf2c0cb312d-plastic.scn
+res://characters/umido.tscn::285614bc61ed23ed2c13af2e68d3de1b::1709043384::res://.godot/exported/133200997/export-05bdd18e22278cf215ef58298aa32c88-umido.scn
+res://scenes/barraRifiuti.tscn::906104274fcf76b8c22ff4c427cfb8cd::1710014537::res://.godot/exported/133200997/export-4fd16bc594db2195aef11c497c24d15e-barraRifiuti.scn
+res://scenes/charge bar.tscn::c19a5739c1b6a22234b70c6a08e0f59a::1709658956::res://.godot/exported/133200997/export-2d1526ae05a3936b934bdb5146c2ec07-charge bar.scn
+res://scenes/gameover_screen.tscn::21a52f70c3e060323baecc48d78733d7::1710013170::res://.godot/exported/133200997/export-9983ff500df7cf45eedafbf4c4ca1df1-gameover_screen.scn
+res://scenes/help.tscn::ae17cb42a3dcdb089d2a10b2d3a87aec::1710014537::res://.godot/exported/133200997/export-49529326dff55a32d138c04949bebb4d-help.scn
+res://scenes/mainGame.tscn::ff59620eab90fac42e216e2b163706a0::1710014537::res://.godot/exported/133200997/export-bf64f02ccfe4a4599a56d5c382948bbb-mainGame.scn
+res://scenes/menu.tscn::a68e6dc0e525cadf71693404fb0c52c0::1710014537::res://.godot/exported/133200997/export-1ce5c86e8ca186dcaaeaa8726f1268db-menu.scn
+res://scenes/pause_menu.tscn::bd63bc9031c9573c57cfd5946312b50e::1710013170::res://.godot/exported/133200997/export-ca2c2284eb591e72162d67219a0d2f87-pause_menu.scn
+res://scenes/slider.tscn::78869475da8c3bbe69aa06f2d157a88b::1710014593::res://.godot/exported/133200997/export-f93b9e12a53442364799f69883574685-slider.scn

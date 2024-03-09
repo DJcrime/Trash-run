@@ -21,6 +21,7 @@ func _on_area_entered(area):
 	if (!Globals.gameOver&&!Globals.pause):
 		if area.is_in_group(type):
 			area.queue_free()
+			$AudioStreamPlayer2D.playing=true
 			Globals.score+=1
 			if Globals.trashValue<=70:
 				Globals.trashValue+=30
