@@ -1,0 +1,72 @@
+[gd_scene load_steps=4 format=3 uid="uid://0nxllnk02ucj"]
+
+[ext_resource type="Script" path="res://scripts/sliderBoxCarta.gd" id="1_aw8qa"]
+[ext_resource type="Texture2D" uid="uid://dnrlgxt3h06l7" path="res://grafiche/character/paper trash.png" id="2_nuoxv"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_rbodj"]
+font_size = 60
+outline_size = 65
+outline_color = Color(0, 0, 0, 1)
+
+[node name="ColorRect4" type="ColorRect"]
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 1, 1)
+script = ExtResource("1_aw8qa")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -276.0
+offset_top = -319.0
+offset_right = 343.0
+offset_bottom = 191.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_nuoxv")
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -255.001
+offset_right = 254.999
+offset_bottom = 75.0
+grow_horizontal = 2
+text = "BIDONE
+DELLA CARTA"
+label_settings = SubResource("LabelSettings_rbodj")
+horizontal_alignment = 1
+
+[node name="Description2" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -163.0
+offset_right = 1.99805
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+text = "Il suo nome è Clara, ed è un cestino di carta che vive in un centro di riciclaggio. Ha sempre amato la fantasia e 
+l’avventura, e si emoziona nell’immaginare le storie e i mondi dei vari fumetti, romanzi e cataloghi che riceve. È un personaggio 
+sognatore e coraggioso, che cerca di aiutare gli altri bidoni a trovare la loro passione e divertimento. Ama 
+condividere le sue avventure e le sue emozioni con i suoi amici, ed è interessata alle ultime notizie e sorprese. 
+Il suo sogno è di essere riciclata e trasformata in qualcosa di fantastico e coinvolgente, come un 
+film o un videogioco."
+text_overrun_behavior = 4
+clip_text = true
+
+[node name="paper2" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(600, 262)
+
+[connection signal="screen_entered" from="paper2" to="." method="_on_paper_2_screen_entered"]

@@ -1,0 +1,71 @@
+[gd_scene load_steps=4 format=3 uid="uid://b2q2m3ykd1fhm"]
+
+[ext_resource type="Script" path="res://scripts/sliderBoxIndifferenziata.gd" id="1_12p2g"]
+[ext_resource type="Texture2D" uid="uid://cw66uuqv0j6ay" path="res://grafiche/character/trash.png" id="2_jvd3v"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_de3u2"]
+font_size = 60
+outline_size = 65
+outline_color = Color(0, 0, 0, 1)
+
+[node name="ColorRect5" type="ColorRect"]
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -0.000244141
+grow_horizontal = 0
+grow_vertical = 2
+color = Color(0.568627, 0.568627, 0.568627, 1)
+script = ExtResource("1_12p2g")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -277.0
+offset_top = -234.0
+offset_right = 342.0
+offset_bottom = 276.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.94, 0.94)
+texture = ExtResource("2_jvd3v")
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -255.001
+offset_right = 254.999
+offset_bottom = 75.0
+grow_horizontal = 2
+text = "BIDONE
+DELL'INDIFFERENZIATA"
+label_settings = SubResource("LabelSettings_de3u2")
+horizontal_alignment = 1
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -163.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Il suo nome è Bruno, ed è un bidone per rifiuti misti che vive in un centro di smaltimento. Ha sempre 
+avuto una grande curiosità e un desiderio di imparare, e gli piace scoprire le storie e le origini dei vari oggetti che 
+riceve. È un personaggio intelligente e divertente, che cerca di aiutare gli altri bidoni a capire il valore e il potenziale dei 
+loro rifiuti. Ama condividere la sua conoscenza e la sua curiosità con i suoi amici, ed è interessato alle 
+ultime notizie e scoperte. Il suo sogno è di essere riciclato e trasformato in qualcosa di utile e interessante, come un libro o un giocattolo."
+text_overrun_behavior = 4
+clip_text = true
+
+[node name="garbage2" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(569, 287)
+
+[connection signal="screen_entered" from="garbage2" to="." method="_on_garbage_2_screen_entered"]

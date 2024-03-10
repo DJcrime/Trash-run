@@ -28,7 +28,7 @@ var anim:int=0:
 		anim=value
 		checkAnim.emit()
 #variabile valore sporcizia
-var trashValue:int=100:
+var trashValue:float=100:
 	set(value):
 		trashValue=value
 		checkTrashValue.emit()

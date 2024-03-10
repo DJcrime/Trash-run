@@ -1,0 +1,73 @@
+[gd_scene load_steps=4 format=3 uid="uid://ce6bievxfm6k5"]
+
+[ext_resource type="Script" path="res://scripts/sliderBoxUmido.gd" id="1_8xe0g"]
+[ext_resource type="Texture2D" uid="uid://dyy3yr4rmagj" path="res://grafiche/character/organico trash static.png" id="2_u76e8"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_sk5iv"]
+font_size = 60
+outline_size = 65
+outline_color = Color(0, 0, 0, 1)
+
+[node name="ColorRect" type="ColorRect"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 0.00195313
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.4, 0.223529, 0.0196078, 1)
+script = ExtResource("1_8xe0g")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -276.001
+offset_top = -269.0
+offset_right = 342.999
+offset_bottom = 241.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_u76e8")
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -255.001
+offset_right = 254.999
+offset_bottom = 75.0
+grow_horizontal = 2
+text = "BIDONE
+ DELL'UMIDO"
+label_settings = SubResource("LabelSettings_sk5iv")
+horizontal_alignment = 1
+
+[node name="Description2" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -163.0
+offset_right = 1.99805
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+text = "Il suo nome è Bino, ed è un bidone per l'umido che vive in una discarica, ma non si lascia abbattere dalla sua situazione. Sa 
+che i rifiuti organici possono diventare una risorsa preziosa se vengono riciclati correttamente. Ecco 
+perché Bino ha deciso di intraprendere un viaggio per scoprire i diversi modi di trasformare i suoi amici in compost, biogas, 
+fertilizzanti e altro ancora. Lungo il cammino, Bino incontrerà molti altri bidoni che gli insegneranno le regole del 
+riciclaggio e gli mostreranno le meraviglie della natura. Bino è un personaggio curioso e avventuroso, che vuole 
+imparare e divertirsi. Ti piacerebbe unirti a lui nel suo fantastico viaggio?"
+text_overrun_behavior = 4
+clip_text = true
+
+[node name="umido2" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(580, 287)
+
+[connection signal="screen_entered" from="umido2" to="." method="_on_umido_2_screen_entered"]

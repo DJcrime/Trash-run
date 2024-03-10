@@ -1,0 +1,71 @@
+[gd_scene load_steps=4 format=3 uid="uid://x3ve7qjw7w8d"]
+
+[ext_resource type="Script" path="res://scripts/sliderBoxPlastica.gd" id="1_ulyqc"]
+[ext_resource type="Texture2D" uid="uid://dajdoqnm37sq8" path="res://grafiche/character/plastic trash.png" id="2_uhtxq"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_87i80"]
+font_size = 60
+outline_size = 65
+outline_color = Color(0, 0, 0, 1)
+
+[node name="ColorRect2" type="ColorRect"]
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 0.231373, 1)
+script = ExtResource("1_ulyqc")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -299.0
+offset_top = -291.0
+offset_right = 320.0
+offset_bottom = 219.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_uhtxq")
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -255.001
+offset_right = 254.999
+offset_bottom = 75.0
+grow_horizontal = 2
+text = "BIDONE
+DELLA PLASTICA"
+label_settings = SubResource("LabelSettings_87i80")
+horizontal_alignment = 1
+
+[node name="Description2" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -163.0
+offset_right = 1.99805
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+text = "Il suo nome è Pina, ed è un bidone della plastica che vive in un centro di riciclaggio. Ha sempre 
+amato la moda e il design, e le piace cambiare il suo aspetto con le diverse bottiglie, sacchetti e contenitori che riceve. È 
+un personaggio creativo e generoso, che cerca di aiutare gli altri bidoni a trovare il loro stile e personalità. Ama 
+condividere le sue idee e consigli con i suoi amici, ed è interessata alle ultime tendenze e notizie. Il suo sogno è di essere 
+riciclata e trasformata in qualcosa di elegante e originale, come un vestito o un accessorio."
+text_overrun_behavior = 4
+clip_text = true
+
+[node name="plastic2" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(605, 297)
+
+[connection signal="screen_entered" from="plastic2" to="." method="_on_plastic_2_screen_entered"]

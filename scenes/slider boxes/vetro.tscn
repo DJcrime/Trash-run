@@ -1,0 +1,70 @@
+[gd_scene load_steps=4 format=3 uid="uid://d0ox6chk2i6ad"]
+
+[ext_resource type="Script" path="res://scripts/sliderBoxVetro.gd" id="1_y3ytq"]
+[ext_resource type="Texture2D" uid="uid://bmknchdqra5ag" path="res://grafiche/character/glass trash.png" id="2_pt1ft"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_gm71q"]
+font_size = 60
+outline_size = 65
+outline_color = Color(0, 0, 0, 1)
+
+[node name="ColorRect3" type="ColorRect"]
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 1, 0, 1)
+script = ExtResource("1_y3ytq")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -238.0
+offset_top = -284.0
+offset_right = 381.0
+offset_bottom = 226.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_pt1ft")
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -255.001
+offset_right = 254.999
+offset_bottom = 75.0
+grow_horizontal = 2
+text = "BIDONE 
+DEL VETRO"
+label_settings = SubResource("LabelSettings_gm71q")
+horizontal_alignment = 1
+
+[node name="Description2" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -163.0
+offset_right = 1.99805
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+text = "Il suo nome è Vicky, ed è un bidone per il vetro che vive in un centro di riciclaggio. Ha sempre amato la bellezza e l’arte, 
+ed è entusiasta di vedere i colori e le forme delle diverse bottiglie e vasetti che riceve. È un personaggio elegante e gentile, che cerca di 
+aiutare gli altri bidoni a trovare la loro espressione e creatività. Ama condividere le sue idee e consigli con i suoi amici, ed è interessata alle 
+ultime tendenze e notizie. Il suo sogno è di essere riciclata e trasformata in qualcosa di splendido e originale, come un vaso o una collana."
+text_overrun_behavior = 4
+clip_text = true
+
+[node name="glass2" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(595, 297)
+
+[connection signal="screen_entered" from="glass2" to="." method="_on_glass_2_screen_entered"]

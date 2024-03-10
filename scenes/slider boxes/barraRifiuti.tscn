@@ -1,0 +1,64 @@
+[gd_scene load_steps=3 format=3 uid="uid://cs2yc1yo5yj58"]
+
+[ext_resource type="Texture2D" uid="uid://c4tfe53rgg8kx" path="res://grafiche/screenshot/Screenshot 2024-03-06 091607.png" id="2_h2ryc"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_nckk2"]
+font_size = 60
+outline_size = 65
+outline_color = Color(0, 0, 0, 1)
+
+[node name="ColorRect3" type="ColorRect"]
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.529412, 0.529412, 0.529412, 1)
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -255.001
+offset_right = 254.999
+offset_bottom = 75.0
+grow_horizontal = 2
+text = "barra  rifiuti"
+label_settings = SubResource("LabelSettings_nckk2")
+horizontal_alignment = 1
+uppercase = true
+
+[node name="Description2" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -163.0
+offset_right = 1.99805
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+text = "La barra dei rifiuti indica quanti rifiuti vengono raccolti,
+meno ne prendi più la barra scenderà, questo
+ti costerà un bigiletto giallo.
+Attento a non farla scendere troppo."
+text_overrun_behavior = 4
+clip_text = true
+
+[node name="immagineGioco2" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -361.001
+offset_top = -192.0
+offset_right = 356.999
+offset_bottom = 113.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_h2ryc")
+expand_mode = 1
