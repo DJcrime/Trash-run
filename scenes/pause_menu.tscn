@@ -1,10 +1,15 @@
-[gd_scene load_steps=6 format=3 uid="uid://j8wyjxin0oid"]
+[gd_scene load_steps=7 format=3 uid="uid://j8wyjxin0oid"]
 
 [ext_resource type="Texture2D" uid="uid://c70h8qtq727m4" path="res://grafiche/scenes/pause.png" id="1_a14jt"]
 [ext_resource type="Script" path="res://scripts/gameover_screen.gd" id="1_g3312"]
 [ext_resource type="Texture2D" uid="uid://60lsrl5h35kv" path="res://grafiche/scenes/back button.png" id="2_d43cp"]
 [ext_resource type="Texture2D" uid="uid://dbqqtqlkal0ge" path="res://grafiche/scenes/restart button.png" id="3_ffk6c"]
 [ext_resource type="Texture2D" uid="uid://cyli3e75wyn6k" path="res://grafiche/scenes/continue button.png" id="5_scmpu"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_w3owu"]
+font_size = 29
+outline_size = 15
+outline_color = Color(0, 0, 0, 1)
 
 [node name="pause menu" type="Control"]
 layout_mode = 3
@@ -117,6 +122,42 @@ offset_left = 0.16127
 offset_top = -0.106903
 offset_right = 0.00668335
 offset_bottom = 0.139236
+
+[node name="score" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -90.344
+offset_top = 170.544
+offset_right = 82.656
+offset_bottom = 217.544
+grow_horizontal = 2
+grow_vertical = 2
+text = "SCORE: 0"
+label_settings = SubResource("LabelSettings_w3owu")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="best" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -90.344
+offset_top = 220.544
+offset_right = 82.656
+offset_bottom = 267.544
+grow_horizontal = 2
+grow_vertical = 2
+text = "BEST: 0"
+label_settings = SubResource("LabelSettings_w3owu")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [connection signal="pressed" from="back" to="." method="_on_back_pressed"]
 [connection signal="pressed" from="restart" to="." method="_on_restart_pressed"]

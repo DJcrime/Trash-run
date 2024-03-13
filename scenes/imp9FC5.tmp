@@ -1,0 +1,208 @@
+[gd_scene load_steps=7 format=3 uid="uid://dfxqw1p5xt1i4"]
+
+[ext_resource type="Texture2D" uid="uid://dggohenitkqpt" path="res://grafiche/scenes/impostazioniTItle.png" id="1_3keax"]
+[ext_resource type="Script" path="res://scripts/impostazioni.gd" id="1_yoeyk"]
+[ext_resource type="Texture2D" uid="uid://djsy3mkux8p5" path="res://grafiche/scenes/nota.png" id="2_25mdk"]
+[ext_resource type="Texture2D" uid="uid://2hpgcl3ibxoq" path="res://grafiche/scenes/sfx.png" id="3_phxfg"]
+[ext_resource type="Texture2D" uid="uid://60lsrl5h35kv" path="res://grafiche/scenes/back button.png" id="4_y2hx2"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_vlhqq"]
+font_size = 36
+outline_size = 21
+outline_color = Color(0, 0, 0, 1)
+
+[node name="impostazioni" type="Control"]
+layout_mode = 3
+anchor_left = 0.289
+anchor_top = 0.094
+anchor_right = 0.755
+anchor_bottom = 1.0
+offset_left = 0.071991
+offset_top = 0.0879974
+offset_right = 0.239929
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_yoeyk")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.117647, 0.117647, 0.117647, 0.694118)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_right = 6.10352e-05
+offset_bottom = 127.0
+grow_horizontal = 2
+texture = ExtResource("1_3keax")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.381
+anchor_top = 0.268
+anchor_right = 0.621
+anchor_bottom = 0.353
+offset_left = -0.0970154
+offset_top = 0.18399
+offset_right = 0.0229797
+offset_bottom = 0.288986
+grow_horizontal = 2
+grow_vertical = 2
+text = "MUSIC"
+label_settings = SubResource("LabelSettings_vlhqq")
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.428
+anchor_top = 0.361
+anchor_right = 0.592
+anchor_bottom = 0.509
+offset_left = 0.164001
+offset_top = 0.0929871
+offset_right = 0.0960388
+offset_bottom = 0.21701
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 1, 0.694118)
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+modulate = Color(1, 0, 0, 1)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.415
+anchor_top = 0.373
+anchor_right = 0.613
+anchor_bottom = 0.528
+offset_left = 0.14502
+offset_top = 0.0489807
+offset_right = -0.180969
+offset_bottom = 0.0639954
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_25mdk")
+expand_mode = 1
+
+[node name="music" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.429
+anchor_top = 0.361
+anchor_right = 0.592
+anchor_bottom = 0.509
+offset_left = -0.372986
+offset_top = 0.0929871
+offset_right = 0.0960388
+offset_bottom = 0.21701
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -0.00345634
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.37
+anchor_top = 0.537
+anchor_right = 0.632
+anchor_bottom = 0.622
+offset_left = 5.80998
+offset_top = -0.218994
+offset_right = -5.884
+offset_bottom = -0.114014
+grow_horizontal = 2
+grow_vertical = 2
+text = "EFFECTS"
+label_settings = SubResource("LabelSettings_vlhqq")
+
+[node name="ColorRect3" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.428
+anchor_top = 0.629
+anchor_right = 0.592
+anchor_bottom = 0.778
+offset_left = 0.164001
+offset_top = 0.277008
+offset_right = 0.0960388
+offset_bottom = -0.186035
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 1, 0.694118)
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+modulate = Color(0, 1, 0, 1)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.415
+anchor_top = 0.642
+anchor_right = 0.583
+anchor_bottom = 0.767
+offset_left = 0.14502
+offset_top = 0.145996
+offset_right = -0.0709534
+offset_bottom = -0.229004
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_phxfg")
+expand_mode = 1
+
+[node name="effect" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.429
+anchor_top = 0.629
+anchor_right = 0.592
+anchor_bottom = 0.778
+offset_left = -0.372986
+offset_top = 0.277008
+offset_right = 0.0960388
+offset_bottom = -0.186035
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -0.00345634
+
+[node name="TextureRect4" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.285
+anchor_top = 0.825
+anchor_right = 0.75
+anchor_bottom = 0.949
+offset_left = -0.0449982
+offset_top = -0.275024
+offset_right = 0.25
+offset_bottom = -0.0630493
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_y2hx2")
+expand_mode = 1
+
+[node name="back" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.285
+anchor_top = 0.825
+anchor_right = 0.75
+anchor_bottom = 0.949
+offset_left = -0.0449982
+offset_top = 0.724976
+offset_right = 0.25
+offset_bottom = -0.0630493
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -0.00345634
+
+[connection signal="pressed" from="music" to="." method="_on_music_pressed"]
+[connection signal="pressed" from="effect" to="." method="_on_effect_pressed"]
+[connection signal="pressed" from="back" to="." method="_on_back_pressed"]

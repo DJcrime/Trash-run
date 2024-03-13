@@ -1,7 +1,7 @@
 extends Area2D
 
 var type:String="plastic"
-
+var lenght=37
 func _ready():
 	Globals.connect("checkAnim",checkAnim)
 
@@ -21,7 +21,7 @@ func _on_area_entered(area):
 	if (!Globals.gameOver&&!Globals.pause):
 		if area.is_in_group(type):
 			area.queue_free()
-			$AudioStreamPlayer2D.playing=true
+			$AudioStreamPlayer2D.playing=Globals.sfx
 			Globals.score+=1
 			if Globals.trashValue<=70:
 				Globals.trashValue+=30

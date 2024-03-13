@@ -1,9 +1,14 @@
-[gd_scene load_steps=5 format=3 uid="uid://dpyea1ol1jf1e"]
+[gd_scene load_steps=6 format=3 uid="uid://dpyea1ol1jf1e"]
 
 [ext_resource type="Texture2D" uid="uid://cc0nspsdbsk5x" path="res://grafiche/scenes/gameover.png" id="1_abjuk"]
 [ext_resource type="Script" path="res://scripts/gameover_screen.gd" id="1_x52b6"]
 [ext_resource type="Texture2D" uid="uid://60lsrl5h35kv" path="res://grafiche/scenes/back button.png" id="2_b1e42"]
 [ext_resource type="Texture2D" uid="uid://dbqqtqlkal0ge" path="res://grafiche/scenes/restart button.png" id="3_lptag"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_h12f8"]
+font_size = 29
+outline_size = 15
+outline_color = Color(0, 0, 0, 1)
 
 [node name="gameover screen" type="Control"]
 layout_mode = 3
@@ -43,10 +48,10 @@ anchor_left = 0.335
 anchor_top = 0.315
 anchor_right = 0.665
 anchor_bottom = 0.426
-offset_left = 0.104996
-offset_top = 0.094986
-offset_right = -0.105011
-offset_bottom = -0.0620117
+offset_left = 0.105011
+offset_top = 96.095
+offset_right = -0.10498
+offset_bottom = 95.938
 texture = ExtResource("2_b1e42")
 
 [node name="restartbutton" type="TextureRect" parent="."]
@@ -56,10 +61,10 @@ anchor_left = 0.335
 anchor_top = 0.479
 anchor_right = 0.665
 anchor_bottom = 0.589
-offset_left = 0.104996
-offset_top = -0.173004
-offset_right = -0.105011
-offset_bottom = 0.256958
+offset_left = 0.105011
+offset_top = -96.173
+offset_right = -0.10498
+offset_bottom = -95.743
 texture = ExtResource("3_lptag")
 
 [node name="back" type="Button" parent="."]
@@ -67,13 +72,13 @@ modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.335
-anchor_top = 0.315
+anchor_top = 0.479
 anchor_right = 0.667
-anchor_bottom = 0.424
-offset_left = 0.104996
-offset_top = 0.094986
-offset_right = -0.179016
-offset_bottom = 0.111984
+anchor_bottom = 0.588
+offset_left = 0.105011
+offset_top = -0.173004
+offset_right = -0.179047
+offset_bottom = -0.156006
 grow_horizontal = 2
 grow_vertical = 2
 icon_alignment = 1
@@ -84,15 +89,51 @@ modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.335
-anchor_top = 0.479
+anchor_top = 0.315
 anchor_right = 0.665
-anchor_bottom = 0.589
-offset_left = 0.104996
-offset_top = -0.173004
-offset_right = -0.105011
-offset_bottom = 0.256958
+anchor_bottom = 0.426
+offset_left = 0.105011
+offset_top = 0.094986
+offset_right = -0.10498
+offset_bottom = -0.0620728
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="score" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -84.5
+offset_top = 89.5
+offset_right = 88.5
+offset_bottom = 136.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "SCORE: 0"
+label_settings = SubResource("LabelSettings_h12f8")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="best" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -84.5
+offset_top = 139.5
+offset_right = 88.5
+offset_bottom = 186.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "BEST: 0"
+label_settings = SubResource("LabelSettings_h12f8")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [connection signal="pressed" from="back" to="." method="_on_back_pressed"]
 [connection signal="pressed" from="restart" to="." method="_on_restart_pressed"]

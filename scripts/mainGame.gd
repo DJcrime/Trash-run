@@ -9,11 +9,14 @@ var trashes:Array=Array(["res://characters/glass.tscn",
 						"res://characters/umido.tscn"])
 #menu pausa
 const PAUSE_MENU = preload("res://scenes/pause_menu.tscn")
+const GAMEOVER_SCREEN = preload("res://scenes/gameover_screen.tscn")
 #variabili per muovere a destra o sinistra
 var left:bool=false
 var right:bool=false
 var player
 func _ready():
+	$AudioStreamPlayer2D.playing=Globals.sound
+	$CanvasLayer/Control/best.text="BEST: "+str(Globals.best)
 	Globals.vite=0
 	Globals.connect("checkVita",checkVita)
 	Globals.connect("checkPunteggio",checkPunteggio)
@@ -25,9 +28,9 @@ func _ready():
 
 func _process(delta):
 	if (!Globals.gameOver and !Globals.pause):
-		if left:
+		if left and player.global_position.x>=10+(player.lenght/2):
 			player.position.x-=200*delta
-		if right:
+		if right and player.global_position.x<=get_window().size.x-10-(player.lenght/2):
 			player.position.x+=200*delta
 		$trash.position.y+=150*delta
 		if $deleteBarrier/VisibleOnScreenNotifier2D.is_on_screen():
@@ -43,8 +46,9 @@ func checkVita():
 			$AudioStreamPlayer2D.stream=dead
 			$AudioStreamPlayer2D.playing=true
 			Globals.gameOver=true
-			$"CanvasLayer/Control/gameover screen".visible=true
-			
+			$CanvasLayer/Control/gameOver.visible=true
+			var gameStatus=GAMEOVER_SCREEN.instantiate()
+			$CanvasLayer/Control/gameOver.add_child(gameStatus)
 
 func checkPunteggio():
 	$CanvasLayer/Control/score.text=str(Globals.score)

@@ -4,6 +4,10 @@ extends Control
 const MAIN_GAME = "res://scenes/mainGame.tscn"
 const MENU = "res://scenes/menu.tscn"
 
+func _ready():
+	$score.text="SCORE: "+str(Globals.score)
+	$best.text="BEST: "+str(Globals.best)
+
 func _on_back_pressed():
 	Globals.gameOver=false
 	Globals.score=0

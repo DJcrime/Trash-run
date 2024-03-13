@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://b1lq20duh6ykt"]
+[gd_scene load_steps=6 format=3 uid="uid://b1lq20duh6ykt"]
 
 [ext_resource type="Texture2D" uid="uid://mg46lgav1yki" path="res://grafiche/scenes/background.png" id="1_hya78"]
 [ext_resource type="Script" path="res://scripts/menu.gd" id="1_wbgtb"]
 [ext_resource type="Texture2D" uid="uid://bw7sqwkkfnykg" path="res://grafiche/scenes/help button.png" id="3_f8j8x"]
+[ext_resource type="Texture2D" uid="uid://brw7h2hy41eh2" path="res://grafiche/scenes/impostazioni.png" id="3_lsy0t"]
 [ext_resource type="AudioStream" uid="uid://bm4g1g4cjd2ws" path="res://music/menu.wav" id="4_6y4yu"]
 
 [node name="menu" type="Node"]
@@ -18,6 +19,18 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_hya78")
 
+[node name="TextureRect3" type="TextureRect" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.872
+anchor_right = 0.944
+anchor_bottom = 0.111
+offset_left = 0.455933
+offset_top = -6.0
+offset_right = -0.488037
+offset_bottom = 0.071991
+texture = ExtResource("3_lsy0t")
+expand_mode = 1
+
 [node name="TextureRect2" type="TextureRect" parent="CanvasLayer"]
 anchors_preset = -1
 anchor_left = 0.931
@@ -28,6 +41,14 @@ offset_bottom = 0.295998
 grow_horizontal = 0
 texture = ExtResource("3_f8j8x")
 expand_mode = 1
+
+[node name="menuImpostazioni" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="play" type="Button" parent="CanvasLayer"]
 modulate = Color(1, 1, 1, 0)
@@ -69,6 +90,18 @@ offset_left = 0.575928
 offset_bottom = 0.183998
 grow_horizontal = 0
 
+[node name="impostazioni" type="Button" parent="CanvasLayer"]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = -1
+anchor_left = 0.872
+anchor_right = 0.93
+anchor_bottom = 0.113
+offset_left = 0.455933
+offset_top = 1.0
+offset_right = -0.360107
+offset_bottom = -0.224007
+grow_horizontal = 0
+
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("4_6y4yu")
 autoplay = true
@@ -76,3 +109,4 @@ autoplay = true
 [connection signal="pressed" from="CanvasLayer/play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="CanvasLayer/changeCharacter" to="." method="_on_change_character_pressed"]
 [connection signal="pressed" from="CanvasLayer/help" to="." method="_on_help_pressed"]
+[connection signal="pressed" from="CanvasLayer/impostazioni" to="." method="_on_impostazioni_pressed"]
