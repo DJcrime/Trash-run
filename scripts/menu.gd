@@ -26,5 +26,6 @@ func _on_help_pressed():
 
 
 func _on_impostazioni_pressed():
-	var imp=IMPOSTAZIONI.instantiate()
-	$CanvasLayer/menuImpostazioni.add_child(imp)
+	if len($CanvasLayer/menuImpostazioni.get_children())<1:
+		var imp=IMPOSTAZIONI.instantiate()
+		$CanvasLayer/menuImpostazioni.add_child(imp)
