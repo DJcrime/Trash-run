@@ -1,7 +1,6 @@
-res://scenes/menu.tscn
-res://scripts/mainGame.gd
-res://scripts/menu.gd
 res://scenes/mainGame.tscn
+res://scripts/mainGame.gd
+res://scenes/menu.tscn
 res://scenes/pause_menu.tscn
 res://scenes/gameover_screen.tscn
 res://scenes/impostazioni.tscn

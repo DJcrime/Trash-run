@@ -88,8 +88,9 @@ func _on_pause_pressed():
 	Globals.pause=true
 	$CanvasLayer/Control/left.visible=false
 	$CanvasLayer/Control/right.visible=false
-	var pause=PAUSE_MENU.instantiate()
-	$CanvasLayer/Control/pauseMenu.add_child(pause)
+	if len($CanvasLayer/Control/pauseMenu.get_children())<1:
+		var pause=PAUSE_MENU.instantiate()
+		$CanvasLayer/Control/pauseMenu.add_child(pause)
 
 
 func _on_pause_menu_child_exiting_tree(_node):
