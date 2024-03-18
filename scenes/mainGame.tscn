@@ -1,9 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://cw68bghf7paod"]
+[gd_scene load_steps=10 format=3 uid="uid://cw68bghf7paod"]
 
 [ext_resource type="Script" path="res://scripts/mainGame.gd" id="1_fxxsq"]
 [ext_resource type="Texture2D" uid="uid://dq5om4ec7tyyo" path="res://grafiche/scenes/corkboards.png" id="2_csg46"]
 [ext_resource type="Texture2D" uid="uid://kwjfple8swhl" path="res://grafiche/scenes/pause button.png" id="2_o1nq7"]
 [ext_resource type="Texture2D" uid="uid://txvuvuhwe6im" path="res://grafiche/scenes/postit.png" id="3_tait6"]
+[ext_resource type="PackedScene" uid="uid://bj6jtedk44ojl" path="res://scenes/backgroundGame.tscn" id="4_02m4s"]
 [ext_resource type="PackedScene" uid="uid://chvl12uqjojf" path="res://scenes/barraRifiuti.tscn" id="4_pqdet"]
 [ext_resource type="AudioStream" uid="uid://dvci3e0ltw5wi" path="res://music/musicGod.mp3" id="7_2nxf0"]
 
@@ -19,6 +20,7 @@ outline_color = Color(0, 0, 0, 1)
 
 [node name="mainGame" type="Node"]
 script = ExtResource("1_fxxsq")
+metadata/_edit_horizontal_guides_ = [-91.0]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -141,14 +143,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ColorRect" type="ColorRect" parent="."]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 2
-color = Color(0.0784314, 0.898039, 1, 1)
+[node name="Control" parent="." instance=ExtResource("4_02m4s")]
 
 [node name="trash" type="Node2D" parent="."]
 

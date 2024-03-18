@@ -1,14 +1,14 @@
+AnimationPlayer
+Sprite2D
+TextureRect
 Control
 Button
-TextureRect
 Label
 AudioStreamPlayer2D
-AnimationPlayer
 AnimationTree
 ColorRect
 Node
 Timer
 Container
 GPUParticles2D
-Sprite2D
 Node2D
