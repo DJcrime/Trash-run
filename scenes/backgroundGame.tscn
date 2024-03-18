@@ -1,44 +1,48 @@
-[gd_scene load_steps=5 format=3 uid="uid://bj6jtedk44ojl"]
+[gd_scene load_steps=15 format=3 uid="uid://bj6jtedk44ojl"]
 
-[ext_resource type="Texture2D" uid="uid://djnwjkp3la54m" path="res://grafiche/scenes/backgroundGame.png" id="1_h57wg"]
+[ext_resource type="Texture2D" uid="uid://bin8rh1gcddr7" path="res://grafiche/scenes/backgroundGame/frame0.png" id="1_pcjsc"]
+[ext_resource type="Texture2D" uid="uid://skao6to5u1w8" path="res://grafiche/scenes/backgroundGame/frame1.png" id="2_qyc1c"]
+[ext_resource type="Texture2D" uid="uid://d11kuv7a7e2hr" path="res://grafiche/scenes/backgroundGame/frame2.png" id="3_t64kv"]
+[ext_resource type="Texture2D" uid="uid://byjuatytpyqs1" path="res://grafiche/scenes/backgroundGame/frame10.png" id="3_ukpa8"]
+[ext_resource type="Texture2D" uid="uid://caias4roa3op8" path="res://grafiche/scenes/backgroundGame/frame3.png" id="4_s0tbv"]
+[ext_resource type="Texture2D" uid="uid://dcd86c6rssnh1" path="res://grafiche/scenes/backgroundGame/frame11.png" id="4_xhj6l"]
+[ext_resource type="Texture2D" uid="uid://cm2ru2jplhphu" path="res://grafiche/scenes/backgroundGame/frame4.png" id="5_bigr8"]
+[ext_resource type="Texture2D" uid="uid://buqjxmfrw75vc" path="res://grafiche/scenes/backgroundGame/frame12.png" id="5_ieu4i"]
+[ext_resource type="Texture2D" uid="uid://cw7x4rhy5fs6m" path="res://grafiche/scenes/backgroundGame/frame5.png" id="6_phtyn"]
+[ext_resource type="Texture2D" uid="uid://lhwntd55krvw" path="res://grafiche/scenes/backgroundGame/frame6.png" id="7_yw3lp"]
+[ext_resource type="Texture2D" uid="uid://vvpqoioist3x" path="res://grafiche/scenes/backgroundGame/frame7.png" id="8_e3g45"]
+[ext_resource type="Texture2D" uid="uid://dj7hq7dpltkdr" path="res://grafiche/scenes/backgroundGame/frame8.png" id="9_c8ebq"]
+[ext_resource type="Texture2D" uid="uid://dgieyymsgfj23" path="res://grafiche/scenes/backgroundGame/frame9.png" id="11_f3qs5"]
 
-[sub_resource type="Animation" id="Animation_eq2li"]
-resource_name = "idle"
-length = 1.3
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [12, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
-}
-
-[sub_resource type="Animation" id="Animation_yi1rd"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [12]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_pccu2"]
-_data = {
-"RESET": SubResource("Animation_yi1rd"),
-"idle": SubResource("Animation_eq2li")
-}
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_v1unt"]
+frames = 13
+speed_scale = 0.5
+frame_0/texture = ExtResource("1_pcjsc")
+frame_0/duration = 0.2
+frame_1/texture = ExtResource("2_qyc1c")
+frame_1/duration = 0.2
+frame_2/texture = ExtResource("3_t64kv")
+frame_2/duration = 0.2
+frame_3/texture = ExtResource("4_s0tbv")
+frame_3/duration = 0.2
+frame_4/texture = ExtResource("5_bigr8")
+frame_4/duration = 0.2
+frame_5/texture = ExtResource("6_phtyn")
+frame_5/duration = 0.2
+frame_6/texture = ExtResource("7_yw3lp")
+frame_6/duration = 0.2
+frame_7/texture = ExtResource("8_e3g45")
+frame_7/duration = 0.2
+frame_8/texture = ExtResource("9_c8ebq")
+frame_8/duration = 0.2
+frame_9/texture = ExtResource("11_f3qs5")
+frame_9/duration = 0.2
+frame_10/texture = ExtResource("3_ukpa8")
+frame_10/duration = 0.2
+frame_11/texture = ExtResource("4_xhj6l")
+frame_11/duration = 0.2
+frame_12/texture = ExtResource("5_ieu4i")
+frame_12/duration = 0.2
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -48,17 +52,20 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(576, 339)
-scale = Vector2(11.52, 16.9)
-texture = ExtResource("1_h57wg")
-hframes = 10
-vframes = 10
-frame = 12
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AnimatedTexture_v1unt")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-"": SubResource("AnimationLibrary_pccu2")
-}
-autoplay = "idle"
-speed_scale = 0.5
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AnimatedTexture_v1unt")
